@@ -19,6 +19,7 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
 /*===== SCROLL SECTIONS ACTIVE LINK =====*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -40,16 +41,17 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
 /*===== CHANGE BACKGROUND HEADER =====*/ 
 function scrollHeader(){
     const header = document.getElementById('header')
-    if(this.scrollY >=200) header.classList.add('scroll-header'); else header.classList.add('scroll-header')
+    if(this.scrollY >=200) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 /*===== SHOW SCROLL TOP =====*/ 
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top')
-    if(this.scrollY >=560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.add('show-scroll')
+    if(this.scrollY >=560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
 
