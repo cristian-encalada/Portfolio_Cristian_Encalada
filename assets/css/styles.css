@@ -276,6 +276,10 @@ img{
   font-size: .813rem;
 }
 
+.home__areas{
+  font-size: .813rem;
+}
+
 .home__profession{
   font-size: .938rem;
   margin-bottom: var(--mb-3);
