@@ -5,3 +5,6 @@ Personal website developed mobile first and responsive, for a designer or develo
 
 Project replicated and modified from Bedimcode. Really appreciate your help! 
 Bedimcode Youtube channel: https://www.youtube.com/c/Bedimcode
+
+For the particles in the background you can review Vincent Garreau's repository:
+https://github.com/VincentGarreau/particles.js/

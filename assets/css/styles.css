@@ -248,6 +248,12 @@ img{
   overflow: hidden;
 }
 
+#particles-js{
+  height: 100%;
+  width: 100%;
+  /*background: #000000;*/
+}
+
 .home__container{
   position: relative;
   height: calc(100vh - var(--header-height));
