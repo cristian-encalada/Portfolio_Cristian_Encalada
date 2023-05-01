@@ -1,10 +1,12 @@
 # Responsive Portfolio using HTML CSS and JavaScript
-## First personal project - February 2021
+## Personal project - February 2021
 
-Personal website developed mobile first and responsive, for a designer or developer. It includes the sections Home, About, Knowledge, Projects and Contact.
+This is a personal website to display completed projects, which includes sections such as Home, About, Knowledge, Projects, and Contact.
 
-Project replicated and modified from Bedimcode. Really appreciate your help! 
-Bedimcode Youtube channel: https://www.youtube.com/c/Bedimcode
+![portfolio_preview](/assets/img/portfolio_preview.png)
 
-For the particles in the background you can review Vincent Garreau's repository:
+This project was based on Bedimcode's repositories.
+Bedimcode Github: https://github.com/bedimcode
+
+To create the particles in the background you can review Vincent Garreau's repository:
 https://github.com/VincentGarreau/particles.js/
