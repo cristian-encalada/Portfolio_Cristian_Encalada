@@ -4,7 +4,7 @@
 This is a personal website to display completed projects, which includes sections such as Home, About, Knowledge, Projects, and Contact.
 
 You can view the live website here:<br>
-https://cristian-encalada.github.io/Portfolio_Cristian_Encalada/
+https://cristian-encalada.github.io/dev/
 
 ![portfolio_preview](/assets/img/portfolio_preview.png)
 
