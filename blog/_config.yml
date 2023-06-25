@@ -2,6 +2,7 @@
 gems:
   - jemoji
   - jekyll-paginate
+  - faraday-retry
 
 # Site settings
 title: "Mediator"
