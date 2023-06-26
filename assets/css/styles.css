@@ -585,6 +585,13 @@ img{
   box-shadow: 0 6px 8px rgba(174, 190, 205, .4);
 }
 
+.blog__icon{
+  display: flex;
+  justify-content: center
+}
+
+
+
 /*===== CONTACTME =====*/
 .contact__container{
   row-gap: 2.5rem;
