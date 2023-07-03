@@ -109,6 +109,10 @@ img{
   text-align: center;
 }
 
+.dev-blog-title {
+  cursor: pointer;
+}
+
 .section-title{
   font-size: var(--h1-font-size);
   color: var(--first-color);
