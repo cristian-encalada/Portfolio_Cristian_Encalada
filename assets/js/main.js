@@ -108,5 +108,5 @@ gsap.from('.home__social-icon',{opacity: 0, duration: 2, delay: 2.3, y:25, ease:
 
 /*===== OPEN DEV BLOG =====*/ 
 function openDevBlog() {
-    window.open('/dev/blog/', '_blank');
+    window.open('https://cristian-encalada.github.io/docs/', '_blank');
   }
