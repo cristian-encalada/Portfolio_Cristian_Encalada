@@ -10,7 +10,7 @@ https://cristian-encalada.github.io/dev/
 
 ## Notes
 
-- This project was based on Bedimcode's repositories. <br>
+- This project was inspired on Bedimcode's work<br>
     - Bedimcode's Github: https://github.com/bedimcode
 
 - To create the particles in the background you can review Vincent Garreau's repository:<br>
