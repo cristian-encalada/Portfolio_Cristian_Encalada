@@ -2,7 +2,7 @@
 const siteMetadata = {
   title: 'Next.js i18n Starter Blog',
   author: 'Cristian Encalada',
-  headerTitle: 'Cristian Encalada',
+  headerTitle: 'Cristian Encalada | Developer',
   description: 'Personal blog created with Next.js, i18n and Tailwind.css',
   language: 'en',
   theme: 'system', // system, dark or light
