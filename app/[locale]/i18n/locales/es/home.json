@@ -1,6 +1,6 @@
 {
-    "greeting": "Últimos",
-    "description": "Un blog creado con Next.js, i18n y Tailwind.css",
+    "greeting": "Últimos artículos",
+    "description": "Blog personal creado con Next.js, i18n y Tailwind.css",
     "more": "Leer más",
     "all": "Todos los artículos",
   
