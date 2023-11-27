@@ -1,49 +1,21 @@
 {
-  "codesample": {
-    "en": "en/code-sample",
-    "es": "es/exemple-code"
+  "archlinuxdualboot": {
+    "en": "en/2023-09-08-install-arch-linux-dual-boot-win10-UEFI"
   },
-  "derivingols": {
-    "en": "en/deriving-ols-estimator",
-    "es": "es/derivation-estimateur-ols"
+  "itseries": {
+    "en": "en/2023-09-01-programming-related-series"
   },
-  "mardownguide": {
-    "en": "en/github-markdown-guide",
-    "es": "es/guide-github-markdown"
+  "gitsshkey": {
+    "en": "en/2023-08-25-configure-git-github-ssh-key"
   },
-  "nextjsimagesguide": {
-    "en": "en/guide-to-using-images-in-nextjs",
-    "es": "es/guide-utilisation-images-nextjs"
+  "proglangclassification": {
+    "en": "en/2023-08-18-programming-languages-classification"
   },
-  "canadapictures": {
-    "en": "en/images-du-canada",
-    "es": "es/pictures-of-canada"
+  "snakegraph": {
+    "en": "en/2023-08-11-generate-snake-graph-github-actions"
   },
-  "nestedroutes": {
-    "en": "en/introducing-multi-part-posts-with-nested-routing",
-    "es": "es/presentation-publications-en-plusieurs-parties-routage-imbrique"
-  },
-  "introducingstarterblog": {
-    "en": "en/introducing-tailwind-nextjs-starter-blog",
-    "es": "es/presentation-blog-starter-tailwind-nextjs"
-  },
-  "myfancytitle": {
-    "en": "en/my-fancy-title",
-    "es": "es/mon-titre-fancy"
-  },
-  "newfeaturesv1": {
-    "en": "en/new-features-in-v1",
-    "es": "es/nouvelles-fonctionnalites-v1"
-  },
-  "releasev2": {
-    "en": "en/release-of-tailwind-nextjs-starter-blog-v2.0",
-    "es": "es/presentation-starter-blog-tailwind-nextjs-v2.0"
-  },
-  "thetimemachine": {
-    "en": "en/the-time-machine",
-    "es": "es/la-machine-a-remonter-le-temps"
-  },
-  "introducingstarterblogi18n": {
-    "es": "es/presentation-starter-blog-tailwind-nextjs-i18n-v2.0"
+  "markdownguide": {
+    "en": "en/2019-10-11-github-markdown-cheatsheet",
+    "es": "es/2019-10-11-github-markdown-cheatsheet-es"
   }
 }
