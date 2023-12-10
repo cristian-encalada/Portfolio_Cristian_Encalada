@@ -4,10 +4,12 @@
     "es": "es/2019-10-11-github-markdown-cheatsheet-es"
   },
   "snakegraph": {
-    "en": "en/2023-08-11-generate-snake-graph-github-actions"
+    "en": "en/2023-08-11-generate-snake-graph-github-actions",
+    "es": "es/2023-08-11-generate-snake-graph-github-actions-es"
   },
   "proglangclassification": {
-    "en": "en/2023-08-18-programming-languages-classification"
+    "en": "en/2023-08-18-programming-languages-classification",
+    "es": "es/2023-08-18-programming-languages-classification-es"
   },
   "gitsshkey": {
     "en": "en/2023-08-25-configure-git-github-ssh-key"
