@@ -12,18 +12,22 @@
     "es": "es/2023-08-18-programming-languages-classification-es"
   },
   "gitsshkey": {
-    "en": "en/2023-08-25-configure-git-github-ssh-key"
+    "en": "en/2023-08-25-configure-git-github-ssh-key",
+    "es": "es/2023-08-25-configure-git-github-ssh-key-es"
   },
   "itseries": {
-    "en": "en/2023-09-01-programming-related-series"
+    "en": "en/2023-09-01-programming-related-series",
+    "es": "es/2023-09-01-programming-related-series-es"
   },
   "archlinuxdualboot": {
     "en": "en/2023-09-08-install-arch-linux-dual-boot-win10-UEFI"
   },
   "linuxwmvsde": {
-    "en": "en/2023-09-15-linux-desktop-environments-vs-window-managers"
+    "en": "en/2023-09-15-linux-desktop-environments-vs-window-managers",
+    "es": "es/2023-09-15-linux-desktop-environments-vs-window-managers-es"
   },
   "awsecsvsfargate": {
-    "en": "en/2023-09-22-AWS-ECS-vs-Fargate"
+    "en": "en/2023-09-22-AWS-ECS-vs-Fargate",
+    "es": "es/2023-09-22-AWS-ECS-vs-Fargate-es"
   }
 }
