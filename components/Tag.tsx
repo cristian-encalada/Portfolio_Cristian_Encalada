@@ -1,24 +1,17 @@
-import Link from 'next/link'
-import { slug } from 'github-slugger'
-import { LocaleTypes } from 'app/[locale]/i18n/settings'
+import kebabCase from '@/lib/utils/kebabCase';
+import Link from 'next/link';
 
-interface TagProps {
-  text: string
-  params: { locale: LocaleTypes }
+interface Props {
+  text: string;
 }
 
-const Tag: React.FC<TagProps> = ({ text, params: { locale } }) => {
-  // Define the link URL based on the locale
-  const tagLink = `/${locale}/tags/${slug(text)}`
-
+export default function Tag({ text }: Props) {
   return (
     <Link
-      href={tagLink}
-      className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+      href={`/tags/${kebabCase(text)}`}
+      className="rounded-md bg-primary-500 p-1 px-3 text-xs uppercase text-white duration-300 hover:bg-primary-400 active:bg-primary-500"
     >
-      {text.replace(/ /g, '-')}
+      {text.split(' ').join('-')}
     </Link>
-  )
+  );
 }
-
-export default Tag

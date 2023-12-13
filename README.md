@@ -1,41 +1,78 @@
-Fully operational, let me know if you have some problems or issues.
+# dalelarroder.com ⚡️
 
-This repository is a fork from the V.2 version (next-js app router) of [Tailwind Nextjs Starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) with internationalization.
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Deployment**: [Vercel](https://vercel.com)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Analytics**: [Logrocket](https://logrocket.com/)
+- **Content**: [MDX](https://mdxjs.com/) with [Contentlayer](https://www.contentlayer.dev/)
 
-For translations, the chosen library is not next-translate as in the alternative V.1 from [GautierArcin](https://github.com/GautierArcin/tailwind-nextjs-starter-blog/tree/demo/next-translate), but the following libraries :
+## Running Locally
 
-- i18next
-- i18next-browser-languagedetector
-- i18next-resources-to-backend
-- react-i18next
+### Installation
 
-Indeed, with the new version of next-js and the dir app, it was easier for me to find information and
-tutorials to make everything works as expected. (I first tried with next-translate, but there are too many unresolved problems currently with this library and the new features linked to the next-js app directory)
+1. Clone this repo
 
-In addition, unlike version v1, I made it possible to display each post and its translation. Let's say you are reading an article, but you prefer to read it in another language, instead of redirecting you to a 404 (V1) error page, this will display the article in the corresponding language!
+```bash
+git clone git@github.com:dlarroder/dalelarroder.git
+```
 
-But for this, you must assign a unique identifier (LocaleID in your MDX files) for the post, and for the corresponding post in the translated language. If no matching post is found, the router will redirect to the blog's overview page.
+2. Change directory
 
-To be able to test the code and the translations and be sure that everything works, I translated all the mdx articles - from the original repository - into French.
+```sh
+cd dalelarroder
+```
 
-Things to do/missing :
+3. Install yarn packages
 
-- Fix translation in the not-found page. This is related to how the not-found function currently works, so we have to wait for a fix on next-js side, see here : [i18n for not-found page](https://github.com/vercel/next.js/discussions/50518)
+```bash
+yarn
+```
 
-- Tried to update rss.mjs script for first deployment purpose, but don't know if it's correct for language setup (but tried my best) If you're an experienced dev, let me know what you think.
+1. Create a `.env.local` file following the `.env.example`
 
-Everything else is currently working as expected.
+```bash
+cp .env.example .env.local
+```
 
-I had to make significant changes regarding SEO within the pages, but I ended up finding a solution that worked, with a perfect SEO score!
+5. Add your environment variables to `.env.local`
 
-Here is another possible solution for i18n integration regarding SEO, and even translated url :
+```txt
+SPOTIFY_REFRESH_TOKEN=<Your env>
+SPOTIFY_CLIENT_SECRET=<Your env>
+SPOTIFY_CLIENT_ID=<Your env>
+// ...
+```
 
-- [next-roots](https://github.com/svobik7/next-roots)
+6. Run the development server
 
-Any help for improvments and/or bug report is welcome!
+```bash
+yarn dev
+```
 
-Important notes :
+## Contributing
 
-- I'm currently busy writing the documentation, which will be available soon on the deployment demo (with main changes, knowns issues etc.)
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-- Don't update the dependencies : it will break your app since some things have to be fixed on these libraries side.
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Commit your Changes (`git commit -m 'Add some Feature'`)
+3. Push to the Branch (`git push origin main`)
+4. Open a Pull Request
+
+## Lighthouse Score
+
+![Screen Shot 2022-07-04 at 10 52 02 AM](https://user-images.githubusercontent.com/52998821/177234494-f6bc0203-ba71-4f59-8eb7-6375e3784b31.png)
+
+## Previous Version
+
+This is the second version of my website.
+
+Prevoius v1 version:
+
+- https://v1.dalelarroder.com/
+
+## Licence
+
+[MIT](https://github.com/dlarroder/dalelarroder/blob/master/LICENSE) © [Cristian Encalada](https://www.dalelarroder.com)

@@ -17,18 +17,8 @@ module.exports = {
     'next',
     'next/core-web-vitals',
   ],
-  parserOptions: {
-    project: true,
-    tsconfigRootDir: __dirname,
-    sourceType: 'module',
-  },
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        endOfLine: 'auto',
-      },
-    ],
+    'prettier/prettier': ['error', { semi: true }],
     'react/react-in-jsx-scope': 'off',
     'jsx-a11y/anchor-is-valid': [
       'error',
@@ -39,13 +29,11 @@ module.exports = {
       },
     ],
     'react/prop-types': 0,
-    '@typescript-eslint/no-unused-vars': 0,
-    'react/no-unescaped-entities': 0,
+    'no-unused-vars': 0,
+    'react/no-unescaped-entities': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'jsx-a11y/no-noninteractive-element-to-interactive-role': 'off',
-    'jsx-a11y/click-events-have-key-events': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-explicit-any': ['warn'],
   },
-}
+};

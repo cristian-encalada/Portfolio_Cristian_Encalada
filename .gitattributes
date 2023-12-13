@@ -1,5 +1,5 @@
 ## Source: https://github.com/alexkaratarakis/gitattributes
-## Modified * text=auto to * text=auto eol=lf eol=lf to force LF endings.
+## Modified * text=auto to * text eol=lf to force LF endings.
 
 ## GITATTRIBUTES FOR WEB PROJECTS
 #
@@ -16,7 +16,7 @@
 ##   Force LF line endings automatically for files detected as
 ##   text and leave all files detected as binary untouched.
 ##   This will handle all files NOT defined below.
-*                 text=auto eol=lf
+*                 text eol=lf
 
 # Source code
 *.bash            text eol=lf
@@ -28,7 +28,8 @@
 *.html            text diff=html
 *.inc             text
 *.ini             text
-*.js              text
+*.js              linguist-detectable=false
+*.mjs             linguist-detectable=false
 *.json            text
 *.jsx             text
 *.less            text
@@ -44,7 +45,7 @@
 *.sass            text
 *.scm             text
 *.scss            text diff=css
-*.sh              text eol=lf
+*.sh              linguist-detectable=false
 *.sql             text
 *.styl            text
 *.tag             text

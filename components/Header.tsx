@@ -1,67 +1,64 @@
-'use client'
+'use client';
 
-import { useParams, usePathname } from 'next/navigation'
-import siteMetadata from '@/data/siteMetadata'
-import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/monogram-logo.svg'
-import Link from './Link'
-import MobileNav from './MobileNav'
-import ThemeSwitch from './ThemeSwitch'
-import LangSwitch from './LangSwitch'
-import SearchButton from './search/SearchButton'
-import { useTranslation } from 'app/[locale]/i18n/client'
-import type { LocaleTypes } from 'app/[locale]/i18n/settings'
+import classNames from 'classnames';
+import headerNavLinks from 'content/headerNavLinks';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import CommandPalette from './CommandPalette/CommandPalette';
+import MobileNav from './MobileNav';
+import SectionContainer from './SectionContainer';
+import ThemeSwitch from './ThemeSwitch';
 
-const Header = () => {
-  const locale = useParams()?.locale as LocaleTypes
-  const { t } = useTranslation(locale, '')
-  // Get current page path
-  const pathname = usePathname()
+export default function Header() {
+  const pathName = usePathname();
 
   return (
-    <header>
-      <div className="flex items-center justify-between py-10">
-        <div>
-          <Link href={`/${locale}/`} aria-label={siteMetadata.headerTitle}>
-            <div className="flex items-center justify-between">
-              <div className="mr-3">
-                <Logo />
-              </div>
-              {typeof siteMetadata.headerTitle === 'string' ? (
-                <div className="hidden h-6 text-2xl font-semibold sm:block">
-                  {siteMetadata.headerTitle}
-                </div>
-              ) : (
-                siteMetadata.headerTitle
+    <SectionContainer>
+      <header className="z-40 bg-transparent py-5 md:py-10">
+        <div className="mx-auto flex max-w-5xl items-center justify-between">
+          <div>
+            <Link
+              href="/"
+              className={classNames(
+                'horizontal-underline hidden text-3xl font-extrabold sm:block',
+                {
+                  'horizontal-underline-active': pathName === '/',
+                }
               )}
+              aria-label="d."
+            >
+              C.E.
+            </Link>
+          </div>
+          <div className="flex items-center space-x-3 text-base leading-5">
+            <div className="hidden space-x-5 sm:flex">
+              {headerNavLinks.map(({ title, href }) => {
+                const active = pathName?.includes(href);
+                return (
+                  <Link
+                    prefetch
+                    key={title}
+                    href={href}
+                    className={classNames('horizontal-underline text-base', {
+                      'horizontal-underline-active': active,
+                    })}
+                    aria-label={title}
+                  >
+                    <span className="font-semibold tracking-wide text-gray-900 dark:text-gray-100">
+                      {title}
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
-          </Link>
+            <div className="flex items-center">
+              <CommandPalette />
+              <ThemeSwitch />
+              <MobileNav />
+            </div>
+          </div>
         </div>
-        <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
-          {headerNavLinks
-            .filter((link) => link.href !== '/')
-            .map((link) => {
-              const isSelected = pathname.includes(link.href)
-              return (
-                <Link
-                  key={link.title}
-                  href={`/${locale}${link.href}`}
-                  className={`hidden font-medium ${
-                    isSelected ? 'text-primary-500' : 'text-gray-900 dark:text-gray-100'
-                  }  sm:block`}
-                >
-                  {t(`${link.title.toLowerCase()}`)}
-                </Link>
-              )
-            })}
-          <SearchButton />
-          <ThemeSwitch />
-          <LangSwitch />
-          <MobileNav />
-        </div>
-      </div>
-    </header>
-  )
+      </header>
+    </SectionContainer>
+  );
 }
-
-export default Header
