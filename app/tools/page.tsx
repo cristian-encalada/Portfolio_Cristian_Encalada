@@ -1,11 +1,11 @@
 import { MDXLayoutRenderer } from '@/components/MDXComponents';
-import UsesLayout from '@/layouts/MDX/UsesLayout';
+import ToolsLayout from '@/layouts/MDX/ToolsLayout';
 import MainLayout from '@/layouts/MainLayout';
 import { allAuthors } from 'contentlayer/generated';
 
 export const metadata = {
-  title: 'Uses - Cristian Encalada',
-  description: 'What I Use - Cristian Encalada',
+  title: 'Tools - Cristian Encalada',
+  description: 'Tools I Use - Cristian Encalada',
 };
 
 export default function Uses() {
@@ -17,9 +17,9 @@ export default function Uses() {
 
   return (
     <MainLayout>
-      <UsesLayout>
+      <ToolsLayout>
         <MDXLayoutRenderer content={author} />
-      </UsesLayout>
+      </ToolsLayout>
     </MainLayout>
   );
 }

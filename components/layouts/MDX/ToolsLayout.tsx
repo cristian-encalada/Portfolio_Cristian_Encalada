@@ -3,7 +3,7 @@ interface Props {
   children: ReactNode;
 }
 
-export default function UsesLayout({ children }: Props) {
+export default function ToolsLayout({ children }: Props) {
   return (
     <div className="pt-8">
       <div className="mb-8 flex flex-col space-y-2 text-center">
@@ -13,7 +13,7 @@ export default function UsesLayout({ children }: Props) {
         <span className="text-gray-700  dark:text-gray-300">
           Inspired by{' '}
           <a
-            href="https://wesbos.com/uses"
+            href="https://wesbos.com/tools"
             className="underline-magical"
             target="_blank"
             rel="noreferrer"
