@@ -19,11 +19,11 @@ summary: Tutorial con el objetivo de que todos, incluso con un conocimiento téc
   </div>
 </div>
 
-En lugar de tener la vista predeterminada del perfil de Github, es posible generar una imagen animada del juego de "Snake" utilizando la herramienta [snk](https://github.com/marketplace/actions/generate-snake-game-from-github-contribution-grid) con __Github actions__.
+En lugar de tener la vista predeterminada del perfil de Github, es posible generar una imagen animada del juego de "Snake" utilizando la herramienta [snk](https://github.com/marketplace/actions/generate-snake-game-from-github-contribution-grid) con **Github actions**.
 
-En este tutorial hay muchas capturas de pantalla e instrucciones paso a paso durante todo el proceso. El objetivo es que __todos__, incluso con un conocimiento técnico básico, puedan intentar y actualizar el perfil personal de Github y al mismo tiempo aprender una introducción a los conceptos básicos de las herramientas de GitHub Actions.
+En este tutorial hay muchas capturas de pantalla e instrucciones paso a paso durante todo el proceso. El objetivo es que **todos**, incluso con un conocimiento técnico básico, puedan intentar y actualizar el perfil personal de Github y al mismo tiempo aprender una introducción a los conceptos básicos de las herramientas de GitHub Actions.
 
-El único __requisito previo__ es tener una cuenta de __Github__.
+El único **requisito previo** es tener una cuenta de **Github**.
 
 ### 0. Demo interactiva
 
@@ -43,32 +43,31 @@ Crea un nuevo repositorio público y nómbralo con tu propio nombre de usuario d
 
 En la página de usuario de Github, haz clic en la pestaña de `Repositorios` en la parte superior y luego haz clic en el botón `Nuevo` en el lado derecho.
 
-
 Completa todos los campos requeridos de la siguiente manera y haz clic en el botón `Crear repositorio`.
 
 ![Create a new repo](/static/images/2023-08-11-snake-github/2023-08-11_new_gh_repo.png)
 
 You should have some message similar to this (in this case, _dev-404-not-found_ is the github username):
 
-> __dev-404-not-found/dev-404-not-found__ es un repositorio ✨especial✨ que puedes utilizar para agregar un README.md a tu perfil de GitHub. Asegúrate de que sea público e inicialízalo con un README para comenzar.
+> **dev-404-not-found/dev-404-not-found** es un repositorio ✨especial✨ que puedes utilizar para agregar un README.md a tu perfil de GitHub. Asegúrate de que sea público e inicialízalo con un README para comenzar.
 
-El nuevo repositorio debería estar listo y tener la rama __main__ de forma predeterminada.
+El nuevo repositorio debería estar listo y tener la rama **main** de forma predeterminada.
 
 ### 2. Configura la herramienta SNK de GitHub Actions
 
-* En el nuevo repositorio creado, haz clic en el botón `Acciones` en la parte superior.
+- En el nuevo repositorio creado, haz clic en el botón `Acciones` en la parte superior.
 
 ![Gh actions 1](/static/images/2023-08-11-snake-github/2023-08-11_gh_actions1.png)
 
-* Click en __configura un workflow manualmente ->__
+- Click en **configura un workflow manualmente ->**
 
 ![Gh actions 2](/static/images/2023-08-11-snake-github/2023-08-11_gh_actions2.png)
 
-* Cambia el nombre del archivo `.yml` a `snake.yml` o cualquier otro nombre que prefieras. Este cambio es útil si en el futuro deseas agregar más flujos de trabajo y el archivo main.yml predeterminado podría causar conflictos.
+- Cambia el nombre del archivo `.yml` a `snake.yml` o cualquier otro nombre que prefieras. Este cambio es útil si en el futuro deseas agregar más flujos de trabajo y el archivo main.yml predeterminado podría causar conflictos.
 
 ![Gh actions 3](/static/images/2023-08-11-snake-github/2023-08-11_gh_actions3.png)
 
-* Luego copia el siguiente código en el contenido de __Edit__:
+- Luego copia el siguiente código en el contenido de **Edit**:
 
 ```yml:snake.yml
 name: generate animation
@@ -76,21 +75,21 @@ name: generate animation
 on:
   # run automatically every 24 hours
   schedule:
-    - cron: "0 */24 * * *" 
-  
+    - cron: "0 */24 * * *"
+
   # allows to manually run the job at any time
   workflow_dispatch:
-  
+
   # run on every push on the master branch
   push:
     branches:
     - master
-    
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    
+
     steps:
       # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
       - name: generate github-contribution-grid-snake.svg
@@ -102,8 +101,8 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-          
+
+
       # push the content of <build_dir> to a branch
       # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
       - name: push github-contribution-grid-snake.svg to the output branch
@@ -115,7 +114,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-* Click en el botón __Commit changes__, la opción __Commit directly to the main branch__ debería estar seleccionada por defecto y luego haz click en __Commit changes__ nuevamente.
+- Click en el botón **Commit changes**, la opción **Commit directly to the main branch** debería estar seleccionada por defecto y luego haz click en **Commit changes** nuevamente.
 
 <div className="flex justify-center">
   <div className="w-full max-w-screen-md overflow-hidden">
@@ -127,10 +126,9 @@ jobs:
   </div>
 </div>
 
-
 Eso es todo. Ahora, el nuevo "workflow" debería estar listo para el próximo paso.
 
-* Para verificar el nuevo workflow de GitHub Actions, puedes revisar los archivos de tu repositorio; debería haber un nuevo directorio llamado `.github/workflows`:
+- Para verificar el nuevo workflow de GitHub Actions, puedes revisar los archivos de tu repositorio; debería haber un nuevo directorio llamado `.github/workflows`:
 
 ![Gh actions 5](/static/images/2023-08-11-snake-github/2023-08-11_gh_actions5.png)
 
@@ -140,43 +138,42 @@ Por último, pero no menos importante, son las credenciales para el flujo de tra
 
 #### Genera un Token de Acceso Personal (Personal Access Token)
 
-* Haz clic en tu icono de perfil (esquina superior derecha) y selecciona la opción Configuración en el menú.
+- Haz clic en tu icono de perfil (esquina superior derecha) y selecciona la opción Configuración en el menú.
 
 ![Gh token 1](/static/images/2023-08-11-snake-github/2023-08-11_access_token1.png)
 
-* Opcionalmente puedes acceder a traves de este enlace: [https://github.com/settings/profile](https://github.com/settings/profile)
+- Opcionalmente puedes acceder a traves de este enlace: [https://github.com/settings/profile](https://github.com/settings/profile)
 
-* Haz click en el botón __Developer settings__ en la parte inferior del menú izquierdo.
+- Haz click en el botón **Developer settings** en la parte inferior del menú izquierdo.
 
 ![Gh token 2](/static/images/2023-08-11-snake-github/2023-08-11_access_token2.png)
 
-* Opcionalmente puedes acceder a traves de este enlace: [https://github.com/settings/tokens](https://github.com/settings/tokens)
+- Opcionalmente puedes acceder a traves de este enlace: [https://github.com/settings/tokens](https://github.com/settings/tokens)
 
-* Haz click en Personal access tokens -> Tokens(classic) -> Generar nuevo token -> Generate nuevo token (classic)
+- Haz click en Personal access tokens -> Tokens(classic) -> Generar nuevo token -> Generate nuevo token (classic)
 
 ![Gh token 3](/static/images/2023-08-11-snake-github/2023-08-11_access_token3.png)
 
-* Llena los primeros campos:
-  * Nota: `workflow_token`
-  * Expiración: `90 days`
-  * Marca la casilla `workflow` (automatically se marcará el alcance a todo el repositorio)
+- Llena los primeros campos:
+  - Nota: `workflow_token`
+  - Expiración: `90 days`
+  - Marca la casilla `workflow` (automatically se marcará el alcance a todo el repositorio)
 
 ![Gh token 4](/static/images/2023-08-11-snake-github/2023-08-11_access_token4.png)
 
-* Haz click en el botón __Generate token__ en la parte inferior.
+- Haz click en el botón **Generate token** en la parte inferior.
 
-
-* Tu nuevo token debería estar listo, este será usado para agregar un nuevo `secret`.
+- Tu nuevo token debería estar listo, este será usado para agregar un nuevo `secret`.
 
 ![Gh token 5](/static/images/2023-08-11-snake-github/2023-08-11_access_token5.png)
 
-* `¡Importante!` Como dice el mensaje: ¡Asegúrate de copiar tu token de acceso personal ahora! ¡No podrás verlo de nuevo!
+- `¡Importante!` Como dice el mensaje: ¡Asegúrate de copiar tu token de acceso personal ahora! ¡No podrás verlo de nuevo!
 
 #### Genera un Secreto de Acción para el Repositorio
 
 Ahora configuremos el secreto de acción para el nuevo repositorio personal. Esta es la parte "más difícil" porque la mayoría de los errores ocurren aquí, pero no te preocupes, simplemente sigue los pasos cuidadosamente y funcionará.
 
-* En el repositorio 'especial' creado al principio, haz clic en `Settings`
+- En el repositorio 'especial' creado al principio, haz clic en `Settings`
 
 ![Gh secret 1](/static/images/2023-08-11-snake-github/2023-08-11_action_secret.png)
 
@@ -193,17 +190,17 @@ Gh secret 1
 Asegúrate de que estás en el repositorio correcto, verificando la URL, debería ser algo como esto (dev-404-not-found es mi nombre de usuario de GitHub)
 https://github.com/dev-404-not-found/dev-404-not-found/settings
 
-* En el menú izquierdo, haz clic en Secretos y variables -> Acciones
+- En el menú izquierdo, haz clic en Secretos y variables -> Acciones
 
 ![Gh secret 2](/static/images/2023-08-11-snake-github/2023-08-11_action_secret2.png)
 
 ![Gh secret 3](/static/images/2023-08-11-snake-github/2023-08-11_action_secret3.png)
 
-* Completa los primeros campos:
-  * Nombre: `GH_TOKEN`
-  * Secreto: `ghp_xxxxxxxxxx`
-    * Usa el token generado anteriormente
-  * Haz click en __Agregar secreto__ en la parte inferior
+- Completa los primeros campos:
+  - Nombre: `GH_TOKEN`
+  - Secreto: `ghp_xxxxxxxxxx`
+    - Usa el token generado anteriormente
+  - Haz click en **Agregar secreto** en la parte inferior
 
 ![Gh secret 4](/static/images/2023-08-11-snake-github/2023-08-11_action_secret4.png)
 
@@ -217,7 +214,7 @@ Antes de ejecutar el workflow, ve a Repositorio -> Configuración -> Acciones ->
 
 #### Ejecuta manualmente el workflow
 
-* Finalmente, ejecuta manualmente solo por primera vez el workflow.
+- Finalmente, ejecuta manualmente solo por primera vez el workflow.
 
 Aún en tu repositorio ve a Acciones -> Todos los flujos de trabajo -> generar animación de serpiente -> Ejecutar flujo de trabajo -> Ejecutar flujo de trabajo (por defecto en la rama principal)
 
@@ -227,7 +224,7 @@ Si el workflow se ejecutó sin errores, se mostrará una marca de verificación 
 
 ![Gh run workflow 2](/static/images/2023-08-11-snake-github/2023-08-11_generate_snake2.png)
 
-¡Tu imagen .svg debería generarse correctamente!  🎉
+¡Tu imagen .svg debería generarse correctamente! 🎉
 
 ### 4. Agrega las imágenes .svg a tu README.md
 
@@ -235,28 +232,28 @@ Si el workflow se ejecutó sin errores, se mostrará una marca de verificación 
 
 En tu repositorio ahora debería haber 2 ramas, la rama principal y la de salida donde se empujarán las imágenes .svg
 
-* Ve a tu repositorio -> cambia de rama -> salida
+- Ve a tu repositorio -> cambia de rama -> salida
 
 ![Gh update README](/static/images/2023-08-11-snake-github/2023-08-11_update_README.png)
 
-* Haz clic en cualquiera de las imágenes generadas para obtener el enlace. Las imágenes son:
-  * github-contribution-grid-snake-dark.svg
-  * github-contribution-grid-snake.svg
+- Haz clic en cualquiera de las imágenes generadas para obtener el enlace. Las imágenes son:
+  - github-contribution-grid-snake-dark.svg
+  - github-contribution-grid-snake.svg
 
 ![Gh update README 2](/static/images/2023-08-11-snake-github/2023-08-11_update_README2.png)
 
-* Haz clic en el botón Raw en la esquina superior derecha.
+- Haz clic en el botón Raw en la esquina superior derecha.
 
 ![Gh update README 3](/static/images/2023-08-11-snake-github/2023-08-11_update_README3.png)
 
-* Copia la URL de cualquier imagen:
-  * Debería ser algo como: https://raw.githubusercontent.com/dev-404-not-found/dev-404-not-found/output/github-contribution-grid-snake-dark.svg
+- Copia la URL de cualquier imagen:
+  - Debería ser algo como: https://raw.githubusercontent.com/dev-404-not-found/dev-404-not-found/output/github-contribution-grid-snake-dark.svg
 
 ![Gh update README 4](/static/images/2023-08-11-snake-github/2023-08-11_update_README4.png)
 
 #### Actualiza tu archivo README.md
 
-* En la rama main de tu repositorio, edita el archivo README.md.
+- En la rama main de tu repositorio, edita el archivo README.md.
 
 ![Gh update README 5](/static/images/2023-08-11-snake-github/2023-08-11_update_README5.png)
 
@@ -270,11 +267,11 @@ Para hacer que la imagen sea adaptable al modo normal o oscuro, puedes agregar l
 </picture>
 ```
 
-* Puedes previsualizar los cambios, para verificar que la imagen es mostrada correctamente.
+- Puedes previsualizar los cambios, para verificar que la imagen es mostrada correctamente.
 
 ![Gh update README 6](/static/images/2023-08-11-snake-github/2023-08-11_update_README6.png)
 
-* Guardar los cambios -> Agregar cambios directamente a la rama main -> Guardar cambios
+- Guardar los cambios -> Agregar cambios directamente a la rama main -> Guardar cambios
 
 <div className="flex justify-center">
   <div className="w-full max-w-screen-md overflow-hidden">
@@ -286,14 +283,14 @@ Para hacer que la imagen sea adaptable al modo normal o oscuro, puedes agregar l
   </div>
 </div>
 
-* Hecho!
+- Hecho!
 
 ### Información adicional
 
-* Un agradecimiento especial a [platane](https://github.com/Platane/snk) ¡el creador de esta increíble herramienta!
+- Un agradecimiento especial a [platane](https://github.com/Platane/snk) ¡el creador de esta increíble herramienta!
 
-* La cuenta de GitHub utilizada en este tutorial [https://github.com/dev-404-not-found](https://github.com/dev-404-not-found) es una cuenta nueva creada para probar todos los pasos proporcionados en este tutorial.
+- La cuenta de GitHub utilizada en este tutorial [https://github.com/dev-404-not-found](https://github.com/dev-404-not-found) es una cuenta nueva creada para probar todos los pasos proporcionados en este tutorial.
 
-* Mi cuenta principal de GitHub es [https://github.com/cristian-encalada](https://github.com/cristian-encalada). El workflow también está configurado allí si quieres echarle un vistazo.
+- Mi cuenta principal de GitHub es [https://github.com/cristian-encalada](https://github.com/cristian-encalada). El workflow también está configurado allí si quieres echarle un vistazo.
 
 ¡Gracias por leer! Si tienes alguna pregunta o sugerencia, deja un comentario. Estaré encantado de ayudar.

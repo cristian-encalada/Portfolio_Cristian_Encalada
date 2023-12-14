@@ -17,7 +17,9 @@ html::-webkit-scrollbar {
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
-  transition: background-color 600000s 0s, color 600000s 0s;
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s;
 }
 
 .underline-magical {
@@ -30,7 +32,7 @@ input:-webkit-autofill:focus {
 
 .horizontal-underline {
   border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#0055FF, #0055FF);
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#0055ff, #0055ff);
   background-size: 0 3px;
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -48,7 +50,7 @@ input:-webkit-autofill:focus {
 }
 
 #nprogress .bar {
-  background: #0055FF !important;
+  background: #0055ff !important;
   height: 4px !important;
 }
 

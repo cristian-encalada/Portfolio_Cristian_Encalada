@@ -23,14 +23,13 @@ summary: ¿Cuáles son las diferencias entre los Entornos de Escritorio y los Ge
 
 ## Índice
 
-* [Sistema X Window](#sistema-x-window)
-* [Gestores de Ventanas (WM)](#gestores-de-ventanas)
-* [Entornos de Escritorio (DE)](#entornos-de-escritorio)
-* [¿Por qué usar un Entorno de Escritorio?](#¿por-qué-usar-un-entorno-de-escritorio?)
-* [¿Por qué usar un Gestor de Ventanas?](#¿por-qué-usar-un-gestor-de-ventanas?)
-* [¿Cuál elegir?](#¿cuál-elegir?)
-* [Referencias](#referencias)
-
+- [Sistema X Window](#sistema-x-window)
+- [Gestores de Ventanas (WM)](#gestores-de-ventanas)
+- [Entornos de Escritorio (DE)](#entornos-de-escritorio)
+- [¿Por qué usar un Entorno de Escritorio?](#¿por-qué-usar-un-entorno-de-escritorio?)
+- [¿Por qué usar un Gestor de Ventanas?](#¿por-qué-usar-un-gestor-de-ventanas?)
+- [¿Cuál elegir?](#¿cuál-elegir?)
+- [Referencias](#referencias)
 
 Si eres usuario de Linux, probablemente hayas escuchado los términos `"Entorno de Escritorio (DE)"` y `"Gestor de Ventanas (WM)"`. Estos son como la cara de tu sistema Linux, pero ¿cuál es la diferencia real y cómo afectan tu experiencia? Vamos a analizarlo en este artículo.
 
@@ -48,29 +47,31 @@ El Gestor de Ventanas (WM) es la pieza del rompecabezas que controla la ubicaci�
 
 Hay 2 tipos de Gestores de Ventanas:
 
-* __Gestores de Ventanas Tiling:__ Estos ensamblan las ventanas de manera ordenada, como bloques de construcción. Ninguna ventana cubre a otra.
+- **Gestores de Ventanas Tiling:** Estos ensamblan las ventanas de manera ordenada, como bloques de construcción. Ninguna ventana cubre a otra.
 
 ![Qtile tiling WM](/static/images/2023-09-15-linux-desktop-environments-vs-window-managers/qtile_tiling_WM.png)
 
 Qtile - Tiling Window Manager
 
-Algunos ejemplos de gestores de ventanas Tiling son: 
-* [qtile](https://qtile.org/)
-* [i3](https://i3wm.org/)
-* [bspwm](https://github.com/baskerville/bspwm)
-* [dwm](https://dwm.suckless.org/)
-* [xmonad](https://xmonad.org/)
+Algunos ejemplos de gestores de ventanas Tiling son:
 
-* __Gestores de Ventanas Stacking:__ Permiten que las ventanas se superpongan como hojas de papel. La mayoría de los entornos de escritorio utilizan estos.
+- [qtile](https://qtile.org/)
+- [i3](https://i3wm.org/)
+- [bspwm](https://github.com/baskerville/bspwm)
+- [dwm](https://dwm.suckless.org/)
+- [xmonad](https://xmonad.org/)
+
+- **Gestores de Ventanas Stacking:** Permiten que las ventanas se superpongan como hojas de papel. La mayoría de los entornos de escritorio utilizan estos.
 
 ![Kwin stack WM](/static/images/2023-09-15-linux-desktop-environments-vs-window-managers/kwin_stacl_WM.png)
 
 KWin 5.24 (stack Window Manager) with Cover Switch effect.
 
 Algunos ejemplos de gestores de ventanas stacking incluyen:
-* [Fluxbox](http://fluxbox.org/)
-* [Openbox](http://openbox.org/wiki/Main_Page)
-* [KWin](https://en.wikipedia.org/wiki/KWin)
+
+- [Fluxbox](http://fluxbox.org/)
+- [Openbox](http://openbox.org/wiki/Main_Page)
+- [KWin](https://en.wikipedia.org/wiki/KWin)
 
 ## Entornos de Escritorio
 
@@ -80,38 +81,37 @@ Nota: Es importante mencionar que, si bien los entornos de escritorio no son com
 
 Cada Entorno de Escritorio tiene su propio estilo. Algunos ejemplos de Entornos de Escritorio Linux Desktop Environments (DEs) son:
 
-* [GNOME](https://www.gnome.org/getting-gnome/)
+- [GNOME](https://www.gnome.org/getting-gnome/)
 
 ![Gnome DE](/static/images/2023-09-15-linux-desktop-environments-vs-window-managers/GNOME_DE.webp)
 
-* [KDE](https://kde.org/)
+- [KDE](https://kde.org/)
 
 ![KDE DE](/static/images/2023-09-15-linux-desktop-environments-vs-window-managers/KDE_DE.png)
 
-* [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment))
+- [Cinnamon](<https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment)>)
 
 ![Cinnamon DE](/static/images/2023-09-15-linux-desktop-environments-vs-window-managers/Cinnamon_5.2.png)
 
-* [XFCE](https://www.xfce.org/)
+- [XFCE](https://www.xfce.org/)
 
 ![XFCE DE](/static/images/2023-09-15-linux-desktop-environments-vs-window-managers/Xfce-Desktop-Environment.png)
 
-* [MATE](https://mate-desktop.org/)
+- [MATE](https://mate-desktop.org/)
 
 ![XFCE DE](/static/images/2023-09-15-linux-desktop-environments-vs-window-managers/MATE-DE.jpg)
 
-
 ## ¿Por qué usar un Entorno de Escritorio?
 
-* __Fácil para nuevos usuarios__: Los Entornos de Escritorio son fáciles de usar y requieren menos configuración.
-* __Fácil de configurar el aspecto y la sensación__: Suelen tener herramientas incorporadas que te permiten ajustar la apariencia de tu sistema.
-* __Muchas opciones para elegir__: Diferentes versiones de Linux vienen con varios Entornos de Escritorio para adaptarse a diferentes gustos.
+- **Fácil para nuevos usuarios**: Los Entornos de Escritorio son fáciles de usar y requieren menos configuración.
+- **Fácil de configurar el aspecto y la sensación**: Suelen tener herramientas incorporadas que te permiten ajustar la apariencia de tu sistema.
+- **Muchas opciones para elegir**: Diferentes versiones de Linux vienen con varios Entornos de Escritorio para adaptarse a diferentes gustos.
 
 ## ¿Por qué usar un Gestor de Ventanas?
 
-* __Ahorra recursos__: Los Gestores de Ventanas utilizan menos potencia informática que los Entornos de Escritorio.
-* __Elige lo que quieres en tu sistema__: A diferencia de los Entornos de Escritorio que vienen con muchas cosas ya instaladas.
-* __Trabaja más rápido__: Después de un poco de configuración, los Gestores de Ventanas pueden ser muy rápidos, gracias a los atajos de teclado.
+- **Ahorra recursos**: Los Gestores de Ventanas utilizan menos potencia informática que los Entornos de Escritorio.
+- **Elige lo que quieres en tu sistema**: A diferencia de los Entornos de Escritorio que vienen con muchas cosas ya instaladas.
+- **Trabaja más rápido**: Después de un poco de configuración, los Gestores de Ventanas pueden ser muy rápidos, gracias a los atajos de teclado.
 
 ## ¿Cuál elegir?
 

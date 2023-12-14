@@ -40,6 +40,16 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href={siteMetadata.twitter}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="twitter"
+                >
+                  <FaTwitter className="sm:text-lg" />
+                </a>
+              </li>
+              <li>
+                <a
                   href={siteMetadata.spotify}
                   target="_blank"
                   rel="noreferrer"

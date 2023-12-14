@@ -19,47 +19,46 @@ summary: Linux is an excellent operative system talking about software developme
   </div>
 </div>
 
-This guide will help you to install Windows and Arch Linux with dual-boot and custom boot partition size. 
+This guide will help you to install Windows and Arch Linux with dual-boot and custom boot partition size.
 
 Linux is an excellent operative system talking about software development, but sometimes we need specific tools or games which only run on Windows, and even tough there are software such as Wine or Proton, the most simple solution to this problem is to have a dual boot with Windows and whatever Linux distribution you prefer.
 
 ## Table of contents
 
-* [0. Pre-requisites](#pre-requisites)
-* [1. Unallocate space for Arch](#unallocate-space-for-arch)
-* [2. Create an Arch bootable USB drive](#create-an-arch-bootable-usb-drive)
-* [3. Boot From the USB Device](#boot-from-the-usb-device)
-* [4. Install Arch Linux](#install-arch-linux)
-* [5. Install the Grub bootloader](#install-the-grub-bootloader)
-* [6. References](#references)
-
+- [0. Pre-requisites](#pre-requisites)
+- [1. Unallocate space for Arch](#unallocate-space-for-arch)
+- [2. Create an Arch bootable USB drive](#create-an-arch-bootable-usb-drive)
+- [3. Boot From the USB Device](#boot-from-the-usb-device)
+- [4. Install Arch Linux](#install-arch-linux)
+- [5. Install the Grub bootloader](#install-the-grub-bootloader)
+- [6. References](#references)
 
 ## Pre-requisites
 
-* Windows 10 or Windows 11 installed -> [Windows downloadd page](https://www.microsoft.com/software-download/windows11)
-* A stable internet connection (via ethernet or wifi)
-* A USB drive to create a bootable device to install Arch (minimun with 1 GB storage)
-* Basic knowledge of command line interface (CLI) and text editors (vim or nano)
+- Windows 10 or Windows 11 installed -> [Windows downloadd page](https://www.microsoft.com/software-download/windows11)
+- A stable internet connection (via ethernet or wifi)
+- A USB drive to create a bootable device to install Arch (minimun with 1 GB storage)
+- Basic knowledge of command line interface (CLI) and text editors (vim or nano)
 
 ## Unallocate space for Arch
 
 Windows creates by default 3 partitions:
 
-* EFI [100 MB] - also known as boot partition or EFI System
-* Recovery [~500 MB] - Windows recovery environment
-* System [NTFS] - primary partition on which Windows is installed (Typically C: drive)
+- EFI [100 MB] - also known as boot partition or EFI System
+- Recovery [~500 MB] - Windows recovery environment
+- System [NTFS] - primary partition on which Windows is installed (Typically C: drive)
 
 In my case, I have a 1 TB HDD (~931.5 GB) with the 3 partitions and one additional NTFS partition for other files in Windows 10:
 
 `Initial Windows partitions:`
 
-* [EFI] System(1GB) - boot partition
-* [WIN] C: Primary (~200GB) for Windows
-* [WIN] D: Data (~500GB) for other files on Windows
+- [EFI] System(1GB) - boot partition
+- [WIN] C: Primary (~200GB) for Windows
+- [WIN] D: Data (~500GB) for other files on Windows
 
 The first thing that we need to do, is create some unallocated space to install Arch Linux (or any othe rdistribution).
 
-On Windows: 
+On Windows:
 
 1. Right click on My PC -> Manage -> Storage -> Disk Management
 2. Right click on the partition where Windows is installed (by default C:) -> Shrink Volume
@@ -67,21 +66,20 @@ On Windows:
 
 `Windows partitions after shrink:`
 
-* [EFI] System(1GB) - boot partition
-* [WIN] C: Primary (~200GB) for Windows
-* [WIN] D: Data (~500GB) for other files on Windows
-* [ARCH] Unallocated (215 GB)
+- [EFI] System(1GB) - boot partition
+- [WIN] C: Primary (~200GB) for Windows
+- [WIN] D: Data (~500GB) for other files on Windows
+- [ARCH] Unallocated (215 GB)
 
 ![Windows disk managements](/static/images/2023-09-08-install-arch-linux-dual-boot-win10-UEFI/Win_disk_management.PNG)
 
-
-__Note:__ In the image above, the 200 GB are not unallocated because I already have Linux installed. Initially will be unallocated space, for some other reference images, check -> [Create a separate partition for installation of Arch Linux](https://www.linuxtechi.com/dual-boot-arch-linux-windows-10/).
+**Note:** In the image above, the 200 GB are not unallocated because I already have Linux installed. Initially will be unallocated space, for some other reference images, check -> [Create a separate partition for installation of Arch Linux](https://www.linuxtechi.com/dual-boot-arch-linux-windows-10/).
 
 ## Create an Arch bootable USB drive
 
 A bootable live USB is an external storage device that contains everything required to boot into a live environment/setup. There are multiple ways to create such a live environment; the classic way is do it with a USB drive.
 
-First we need a USB drive with the Arch ISO file (An ISO file is an exact copy of an entire optical disk such as a CD, DVD, or Blu-ray archived into a single file, for more info, check [What Is an ISO File? Explained in Plain English](https://www.freecodecamp.org/news/what-is-an-iso-file-explained-in-plain-english/)) . 
+First we need a USB drive with the Arch ISO file (An ISO file is an exact copy of an entire optical disk such as a CD, DVD, or Blu-ray archived into a single file, for more info, check [What Is an ISO File? Explained in Plain English](https://www.freecodecamp.org/news/what-is-an-iso-file-explained-in-plain-english/)) .
 
 We can create the Arch live booteable in the USB drive using some software like [Rufus](https://rufus.ie/en/) or [Balena Etcher](https://etcher.balena.io/).
 
@@ -91,10 +89,10 @@ We can create the Arch live booteable in the USB drive using some software like 
 
 2. Download and install Rufus on Windows -> [rufus-4.2.exe](https://rufus.ie/en/):
 
-3. Select the following options in `Drive Properties` (Format Options by default): 
-    - __Device__: Your USB device
-    - __Partition scheme__: GPT
-    - __Target system__: UEFI (non CSM)
+3. Select the following options in `Drive Properties` (Format Options by default):
+   - **Device**: Your USB device
+   - **Partition scheme**: GPT
+   - **Target system**: UEFI (non CSM)
 
 <div className="flex justify-center">
   <div className="w-full max-w-screen-md overflow-hidden">
@@ -105,7 +103,6 @@ We can create the Arch live booteable in the USB drive using some software like 
     />
   </div>
 </div>
-
 
 ## Boot From the USB Device
 
@@ -188,11 +185,13 @@ station wlan0 connect <networkName>
 ```
 
 You can ping Google site to verify the connection:
+
 ```sh
 ping google.com -c 4
 ```
 
 output
+
 ```sh
 PING google.com (142.251.133.14) 56(84) bytes of data.
 64 bytes from eze10s01-in-f14.1e100.net (142.251.133.14): icmp_seq=1 ttl=113 time=11.0 ms
@@ -212,7 +211,9 @@ Find your timezone ("q" to stop listing)
 ```sh
 timedatectl list-timezones
 ```
+
 output:
+
 ```sh
 Africa/Abidjan
 Africa/Accra
@@ -243,7 +244,9 @@ Verify your timezone
 ```sh
 timedatectl status
 ```
+
 output:
+
 ```sh
                Local time: Sun 2023-10-08 12:21:33 -03
            Universal time: Sun 2023-10-08 15:21:33 UTC
@@ -256,14 +259,16 @@ System clock synchronized: yes
 
 ### 4. Create the Linux partitions
 
-__Important: Be very careful with this section, because selecting or using the wrong partitions could remove the windows files/folders and cause data loss, backup your important data before continue__
+**Important: Be very careful with this section, because selecting or using the wrong partitions could remove the windows files/folders and cause data loss, backup your important data before continue**
 
 Verify your current windows partitions (list block devices), with this command:
 
 ```sh
 lsblk
 ```
+
 output:
+
 ```sh
 NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
 sda      8:0    0 931.5G  0 disk
@@ -279,7 +284,9 @@ Another opton to verify the windows partitios is the command:
 ```sh
 fdisk -l
 ```
+
 output:
+
 ```sh
 Disk /dev/sda: 931.51 GiB, 1000204886016 bytes, 1953525168 sectors
 Disk model: TOSHIBA MQ01ABD1
@@ -298,34 +305,34 @@ Device          Start        End    Sectors   Size Type
 ```
 
 A simple way to create the partitions is using the `cfdisk` utility. Run the command:
+
 ```
 cfdisk
 ```
+
 This displays all the partitions available including Windows partitions.
 
 ![View all partitons](/static/images/2023-09-08-install-arch-linux-dual-boot-win10-UEFI/4_Arch_install.webp)
 
 As you can see, there is some free space, created earlier from shrinking drive C on the Windows side. Using this partition, we shall create the following Linux partitions (home is optional):
 
-* root -> 50 GB
-* swap -> 15 GB
-* home -> 150 GB
+- root -> 50 GB
+- swap -> 15 GB
+- home -> 150 GB
 
-__Create the root partition__
+**Create the root partition**
 
 To achieve this, navigate to the free space with and hit ENTER. We will then specify the `Partition size: 50G` for the `root` partition. Then hit ENTER.
 
 The root partition will be created with the `Linux filesystem` type.
 
-
-__Create the home partition__
+**Create the home partition**
 
 To achieve this, navigate to the remaining free space with and hit ENTER. We will then specify the `Partition size: 200G` for the `home` partition. Then hit ENTER.
 
 The root partition will be created with the `Linux filesystem` type.
 
-
-__Create the swap partition__
+**Create the swap partition**
 
 To achieve this, navigate to the remaining free space with and hit ENTER. We will then specify the `Partition size: 14G` (all the remaining) for the `swap` partition. Then hit ENTER.
 
@@ -334,7 +341,6 @@ Since this will be our swap partition, we need to go the extra step and modify t
 In the list that appears, select `Linux Swap` and hit ENTER.
 
 ![swap option](/static/images/2023-09-08-install-arch-linux-dual-boot-win10-UEFI/10_Arch_install.webp)
-
 
 At this point, both the root and Linux swap partitions are created
 
@@ -364,33 +370,37 @@ sda      8:0    0 931.5G  0 disk
 ├─sda3   8:3    0   200G  0 part
 ├─sda4   8:4    0   522M  0 part
 ├─sda5   8:5    0 516.3G  0 part /mnt/windows-sda5
-├─sda6   8:6    0    50G  0 part 
-├─sda7   8:7    0   150G  0 part 
+├─sda6   8:6    0    50G  0 part
+├─sda7   8:7    0   150G  0 part
 └─sda8   8:8    0  14.6G  0 part [SWAP]
 ```
 
 ### 5. Format the linux partitions
 
-__Important: Be very careful with this section, because selecting or using the wrong partitions could remove the windows files/folders and cause data loss, backup your important data before continue__
+**Important: Be very careful with this section, because selecting or using the wrong partitions could remove the windows files/folders and cause data loss, backup your important data before continue**
 
 For the partitions to become usable and available for use, we need to format them and later mount them.
 
 To format the root partition, run the command:
+
 ```sh
 mkfs.ext4 /dev/sda6
 ```
 
 To format the home partition, run the command:
+
 ```sh
 mkfs.ext4 /dev/sda7
 ```
 
 To format the swap partition, run the command:
+
 ```sh
 mkswap /dev/sda8
 ```
 
 Then enable swap using the swapon command shown:
+
 ```sh
 swapon /dev/sda8
 ```
@@ -408,6 +418,7 @@ mount the root partition to the /mnt/home directory
 ```sh
 mount /dev/sda7 /mnt/home
 ```
+
 Verify that root and home linux partitions were mounted properly, use this command:
 
 ```sh
@@ -421,7 +432,7 @@ sda      8:0    0 931.5G  0 disk
 ├─sda2   8:2    0    16M  0 part
 ├─sda3   8:3    0   200G  0 part
 ├─sda4   8:4    0   522M  0 part
-├─sda5   8:5    0 516.3G  0 part 
+├─sda5   8:5    0 516.3G  0 part
 ├─sda6   8:6    0    50G  0 part /
 ├─sda7   8:7    0   150G  0 part /home
 └─sda8   8:8    0  14.6G  0 part [SWAP]
@@ -437,18 +448,17 @@ pacstrap /mnt base linux linux-firmware sudo nano vim git networkmanager dhcpcd 
 
 Brief explanation what are the extra Linux packages are for:
 
-* `sudo`: stands for "superuser do" and is a command that allows authorized users to execute commands as the superuser or another user, as specified by the security policy. It is commonly used to perform administrative tasks that require elevated privileges. For example, you can use sudo to install software, configure system settings, or perform other system maintenance tasks.
+- `sudo`: stands for "superuser do" and is a command that allows authorized users to execute commands as the superuser or another user, as specified by the security policy. It is commonly used to perform administrative tasks that require elevated privileges. For example, you can use sudo to install software, configure system settings, or perform other system maintenance tasks.
 
-* `nano` and `vim`: text editors for the command line.
+- `nano` and `vim`: text editors for the command line.
 
-* `git`: version control system used for tracking changes in source code during software development.
+- `git`: version control system used for tracking changes in source code during software development.
 
-* `networkmanager`: is a Linux utility that simplifies the management of network connections. It provides a graphical and command-line interface to configure and control network settings, including wired, wireless, and mobile broadband connections.
+- `networkmanager`: is a Linux utility that simplifies the management of network connections. It provides a graphical and command-line interface to configure and control network settings, including wired, wireless, and mobile broadband connections.
 
-* `dhcpcd`: is a DHCP (Dynamic Host Configuration Protocol) client daemon for Linux. It automatically configures network interfaces by obtaining IP addresses, DNS servers, and other network-related information from a DHCP server. This tool is commonly used to set up network connections on Linux systems.
+- `dhcpcd`: is a DHCP (Dynamic Host Configuration Protocol) client daemon for Linux. It automatically configures network interfaces by obtaining IP addresses, DNS servers, and other network-related information from a DHCP server. This tool is commonly used to set up network connections on Linux systems.
 
-* `pulseaudio`: is a sound server for Linux and Unix-like operating systems. It allows multiple applications to use audio simultaneously and provides features like volume control, audio redirection, and network audio streaming.
-
+- `pulseaudio`: is a sound server for Linux and Unix-like operating systems. It allows multiple applications to use audio simultaneously and provides features like volume control, audio redirection, and network audio streaming.
 
 ### 8. Generate a file system table (fstab)
 
@@ -463,14 +473,19 @@ genfstab -U /mnt >> /mnt/etc/fstab
 ### 9. Configure root user (newly installed system)
 
 Navigate to the newly created root filesystem
+
 ```sh
 arch-chroot /mnt
 ```
+
 You can verify that you are in the root filesystem using this command:
+
 ```sh
 ls
 ```
+
 Set a password for the root user
+
 ```sh
 passwd
 ```
@@ -482,46 +497,61 @@ Create a new user:
 ```sh
 useradd -m <new_user>
 ```
+
 Set a password for the new user:
+
 ```sh
 passwd <new_user>
 ```
+
 Add the new user to the groups wheel, storage and power:
+
 ```sh
 usermod -aG wheel,storage,power <new_user>
 ```
+
 Execute this command:
+
 ```sh
 visudo
 ```
+
 Remove the comments (#) from these 2 lines (ESC and !x to exit and save the changes):
+
 ```sh
 %wheel ALL=(ALL:ALL) ALL
 Defaults timestamp_timeout=0
 ```
 
 ### 11. Set up the system language
-The locale determines the system language, currency format, numbering and date on your system. This information is contained in the /etc/locale.gen  file. So, open the file using the vim editor.
+
+The locale determines the system language, currency format, numbering and date on your system. This information is contained in the /etc/locale.gen file. So, open the file using the vim editor.
+
 ```sh
 vim /etc/locale.gen
 ```
+
 Once you have accessed the file, scroll and uncomment your preferred locale. In this case, we have decided to go with `en_US.UTF-8 UTF-8`
 
 Save and exit the file. Next generate the locale configuration using the command.
+
 ```sh
 locale-gen
 ```
+
 Next, create a new locale configuration file and save the locale as shown.
+
 ```sh
 echo "LANG=EN_US.UTF-8" > /etc/locale.conf
 ```
+
 ```sh
 export "LANG=EN_US.UTF-8"
 ```
 
 ### 12. Set up the hostname
 
-Next, we are going to configure the hostname of our Arch System. 
+Next, we are going to configure the hostname of our Arch System.
 
 First, create a new file and specify the hostname as shown.
 
@@ -536,6 +566,7 @@ vim /etc/hosts
 ```
 
 `hosts` file:
+
 ```sh
 127.0.0.1 localhost
 ::1 localhost
@@ -551,7 +582,9 @@ Find your timezone ("q" to stop listing, ENTER to continue listing)
 ```sh
 timedatectl list-timezones
 ```
+
 output:
+
 ```sh
 Africa/Abidjan
 Africa/Accra
@@ -574,11 +607,13 @@ Africa/Casablanca
 In my case, my timezone is `America/Montevideo`, so, let's set the timezone with this command:
 
 Execute this command:
+
 ```sh
 ln -sf /usr/share/zoneinfo/America/Montevideo /etc/localtime
 ```
 
 Sync the hardware clock using the command:
+
 ```sh
 hwclock --systohc
 ```
@@ -586,7 +621,6 @@ hwclock --systohc
 ## Install the Grub bootloader
 
 The boot partition (EFI System Partition) contains the bootloader which is responsible for booting the system. When dual booting, we create a single boot partition and load the entries for both the operating systems in one bootloader so that it's easier to select the option we want.
-
 
 Find the windows EFI partition (~100 MB):
 
@@ -610,12 +644,13 @@ sda      8:0    0 931.5G  0 disk
 In this case, the `EFI partition` is the `sda1`, so, we are going to work there.
 
 Create a directory for the EFI partition on which we will mount the Windows EFI system which , in our case is located on the `/dev/sda1` partition
+
 ```sh
 mkdir /mnt/efi
 ```
 
-
 Mount the EFI partition on the EFI mount point.
+
 ```sh
 mount /dev/sda1 /mnt/efi
 ```
@@ -625,25 +660,33 @@ Install the grub bootloader package alongside the efi boot manager package since
 ```sh
 pacman -S grub efibootmgr
 ```
+
 Install the os-prober package which will enable Arch Linux to detect the Windows operating system.
+
 ```sh
 pacman -S os-prober
 ```
+
 Install the ntfs-3g package, it's a read/write NTFS driver for Linux, it provides safe handling of the Windows NTFS file systems. Also the update-grub utility could be helpful in some cases where the grub update is needed.
 
 ```sh
 pacman -S nfts-3g update-grub
 ```
+
 Make sure that GRUB_DISABLE_OS_PROBER=false is uncommented to be able to detect Windows at the startup
+
 ```sh
 vim /etc/default/grub
 ```
+
 Uncomment this line (remove the #):
+
 ```sh
 GRUB_DISABLE_OS_PROBER=false
 ```
 
 Finally, install the grub on the EFI directory:
+
 ```sh
 grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=grub_uefi_arch
 ```
