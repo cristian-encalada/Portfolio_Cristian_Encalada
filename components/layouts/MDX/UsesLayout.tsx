@@ -18,7 +18,7 @@ export default function UsesLayout({ children }: Props) {
             target="_blank"
             rel="noreferrer"
           >
-            Wes bos
+            Wes Bos
           </a>
         </span>
       </div>
