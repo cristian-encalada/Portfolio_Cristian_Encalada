@@ -52,7 +52,7 @@ export default function Intro() {
             className="introText inline-block after:content-['_']"
             style={{ opacity: opacityForBlock(progress, 1) }}
           >
-            Passion using engineering to solve any kind of problems integrating hardware and
+            Passionate solving problems integrating hardware and
             software when possible.
           </span>
           <span
