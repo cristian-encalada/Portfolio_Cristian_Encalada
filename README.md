@@ -1,4 +1,4 @@
-# dalelarroder.com ⚡️
+# Personal portfolio and blog
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Deployment**: [Vercel](https://vercel.com)
@@ -13,13 +13,13 @@
 1. Clone this repo
 
 ```bash
-git clone git@github.com:dlarroder/dalelarroder.git
+git clone https://github.com/cristian-encalada/dev.git
 ```
 
 2. Change directory
 
 ```sh
-cd dalelarroder
+cd dev
 ```
 
 3. Install yarn packages
@@ -49,29 +49,18 @@ SPOTIFY_CLIENT_ID=<Your env>
 yarn dev
 ```
 
-## Contributing
+## Previous Versions
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Portfolio v1: https://cristian-encalada.github.io/dev/
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Blog v2: https://cristian-encalada-blogv2.vercel.app/
 
-1. Fork the Project
-2. Commit your Changes (`git commit -m 'Add some Feature'`)
-3. Push to the Branch (`git push origin main`)
-4. Open a Pull Request
 
-## Lighthouse Score
+## Inspiration
 
-![Screen Shot 2022-07-04 at 10 52 02 AM](https://user-images.githubusercontent.com/52998821/177234494-f6bc0203-ba71-4f59-8eb7-6375e3784b31.png)
-
-## Previous Version
-
-This is the second version of my website.
-
-Prevoius v1 version:
-
-- https://v1.dalelarroder.com/
+* https://github.com/timlrx/tailwind-nextjs-starter-blog
+* https://github.com/PxlSyl/tailwind-nextjs-starter-blog-i18n/tree/main
+* https://github.com/dlarroder/dalelarroder
 
 ## Licence
 
