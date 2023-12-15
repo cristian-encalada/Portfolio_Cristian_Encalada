@@ -2,7 +2,7 @@
 title: How To Generate a Snake-eating Graph using Github Actions (step by step)
 date: '2023-08-11'
 tags: ['markdown', 'github', 'github-actions', 'tutorial']
-author: 'default'
+author: 'Cristian Encalada'
 draft: false
 summary: Tutorial with the objective that everyone, even with a basic technical knowledge was able to update their Github's personal profile and at the same time learn have an introduction to the basics of GitHub Actions tools.
 ---
@@ -43,7 +43,7 @@ On your github's user page, click on the **Repositories** tab on the top and the
 
 Fill in all the required fields as follow and click on th button **Create repository**.
 
-![Create a new repo](/static/images/2023-08-11-snake-github/2023-08-11_new_gh_repo.png)
+![Create a new repo](/static/images/2023-08-11-snake-github/2023-08-11_new_gh_repo.webp)
 
 You should have some message similar to this (in this case, _dev-404-not-found_ is the github username):
 
@@ -55,15 +55,15 @@ The new repo should be ready and have the **main** branch by default.
 
 - In the new repository created, click on the **Actions** button on the top.
 
-![Gh actions 1](/static/images/2023-08-11-snake-github/2023-08-11_gh_actions1.png)
+![Gh actions 1](/static/images/2023-08-11-snake-github/2023-08-11_gh_actions1.webp)
 
 - Click on **set up a workflow by yourself ->**
 
-![Gh actions 2](/static/images/2023-08-11-snake-github/2023-08-11_gh_actions2.png)
+![Gh actions 2](/static/images/2023-08-11-snake-github/2023-08-11_gh_actions2.webp)
 
 - Change the `.yml` file to `snake.yml` or any other name that you want. This change is if in the future, you want to add more workflows and the default main.yml could cause conflicts.
 
-![Gh actions 3](/static/images/2023-08-11-snake-github/2023-08-11_gh_actions3.png)
+![Gh actions 3](/static/images/2023-08-11-snake-github/2023-08-11_gh_actions3.webp)
 
 - Then copy the following code in the **Edit** body:
 
@@ -117,7 +117,7 @@ jobs:
 <div className="flex justify-center">
   <div className="w-full max-w-screen-md overflow-hidden">
     <img
-      src="/static/images/2023-08-11-snake-github/2023-08-11_gh_actions4.png"
+      src="/static/images/2023-08-11-snake-github/2023-08-11_gh_actions4.webp"
       alt="Gh actions 4"
       className="mx-auto"
     />
@@ -128,7 +128,7 @@ That's all, now,the new workflow should be ready for the next step.
 
 - To verify the new Github Action workflow, you can check your repository files, should be a new directory called `.github/workflows` :
 
-![Gh actions 5](/static/images/2023-08-11-snake-github/2023-08-11_gh_actions5.png)
+![Gh actions 5](/static/images/2023-08-11-snake-github/2023-08-11_gh_actions5.webp)
 
 ### 3. Create a Personal Access Token and an Action Secret for the workflow
 
@@ -138,32 +138,32 @@ Last but not less important is the credentials for the workflow, if not, it will
 
 - Click on your profile icon (top-right corner) and click on `Settings` option in the menu.
 
-![Gh token 1](/static/images/2023-08-11-snake-github/2023-08-11_access_token1.png)
+![Gh token 1](/static/images/2023-08-11-snake-github/2023-08-11_access_token1.webp)
 
 - Optionally you can use access through this link: [https://github.com/settings/profile](https://github.com/settings/profile)
 
 - Click on the **Developer settings** button at the bottom of the left menu.
 
-![Gh token 2](/static/images/2023-08-11-snake-github/2023-08-11_access_token2.png)
+![Gh token 2](/static/images/2023-08-11-snake-github/2023-08-11_access_token2.webp)
 
 - Optionally you can use access through link: [https://github.com/settings/tokens](https://github.com/settings/tokens)
 
 - Click on the Personal access tokens -> Tokens(classic) -> Generate new token -> Generate new token (classic)
 
-![Gh token 3](/static/images/2023-08-11-snake-github/2023-08-11_access_token3.png)
+![Gh token 3](/static/images/2023-08-11-snake-github/2023-08-11_access_token3.webp)
 
 - Fill in the first fields:
   - Note: `workflow_token`
   - Expiration: `90 days`
   - Check the `workflow` checkbox (it will automatically check all repo scopes)
 
-![Gh token 4](/static/images/2023-08-11-snake-github/2023-08-11_access_token4.png)
+![Gh token 4](/static/images/2023-08-11-snake-github/2023-08-11_access_token4.webp)
 
 - Click on **Generate token** button at the bottom
 
 - Your new token should be ready, it will be used adding the new secret.
 
-![Gh token 5](/static/images/2023-08-11-snake-github/2023-08-11_access_token5.png)
+![Gh token 5](/static/images/2023-08-11-snake-github/2023-08-11_access_token5.webp)
 
 - `Important!` As the message say: **Make sure to copy your personal access token now. You won’t be able to see it again!**
 
@@ -173,16 +173,16 @@ Now let's configure the action secret for the new personal repository. This is t
 
 - In the 'special' repo created at the beginning, click on the `Settings`
 
-![Gh secret 1](/static/images/2023-08-11-snake-github/2023-08-11_action_secret.png)
+![Gh secret 1](/static/images/2023-08-11-snake-github/2023-08-11_action_secret.webp)
 
 Make sure that you are in the correct repo, checking the URL, should be something like this (`dev-404-not-found` is my github username)
 https://github.com/dev-404-not-found/dev-404-not-found/settings
 
 - On the left menu, click on Secrets and variables -> Actions
 
-![Gh secret 2](/static/images/2023-08-11-snake-github/2023-08-11_action_secret2.png)
+![Gh secret 2](/static/images/2023-08-11-snake-github/2023-08-11_action_secret2.webp)
 
-![Gh secret 3](/static/images/2023-08-11-snake-github/2023-08-11_action_secret3.png)
+![Gh secret 3](/static/images/2023-08-11-snake-github/2023-08-11_action_secret3.webp)
 
 - Fill in the firs fields:
   - Name: `GH_TOKEN`
@@ -190,15 +190,15 @@ https://github.com/dev-404-not-found/dev-404-not-found/settings
     - Use the token generated previously [here](#generate-a-personal-access-token)
   - Click on **Add secret** button at the bottom
 
-![Gh secret 4](/static/images/2023-08-11-snake-github/2023-08-11_action_secret4.png)
+![Gh secret 4](/static/images/2023-08-11-snake-github/2023-08-11_action_secret4.webp)
 
 #### Set workflow read and write permissions
 
 Before run the workflow go to Repository -> Settings -> Actions -> Workflow permissions -> Select: **Read and write permissions**
 
-![Gh actions permissions](/static/images/2023-08-11-snake-github/2023-08-11_actions_permissions.png)
+![Gh actions permissions](/static/images/2023-08-11-snake-github/2023-08-11_actions_permissions.webp)
 
-![Gh actions permissions 2](/static/images/2023-08-11-snake-github/2023-08-11_actions_permissions2.png)
+![Gh actions permissions 2](/static/images/2023-08-11-snake-github/2023-08-11_actions_permissions2.webp)
 
 #### Execute manually the workflow
 
@@ -206,11 +206,11 @@ Before run the workflow go to Repository -> Settings -> Actions -> Workflow perm
 
 Still in your repo go to Actions -> All workflows -> generate snake animation -> Run workflow -> Run workflow (by default in main branch)
 
-![Gh run workflow](/static/images/2023-08-11-snake-github/2023-08-11_generate_snake.png)
+![Gh run workflow](/static/images/2023-08-11-snake-github/2023-08-11_generate_snake.webp)
 
 If the workflow was executed without errors a green check should be displayed. It will be executed **every 24 hours** automatically.
 
-![Gh run workflow 2](/static/images/2023-08-11-snake-github/2023-08-11_generate_snake2.png)
+![Gh run workflow 2](/static/images/2023-08-11-snake-github/2023-08-11_generate_snake2.webp)
 
 That's all! Your snake .svg image should be properly generated! 🎉
 
@@ -222,28 +222,28 @@ In your repo there should be now 2 branch, the main branch, and the output where
 
 - Go to your repo -> switch branches -> output
 
-![Gh update README](/static/images/2023-08-11-snake-github/2023-08-11_update_README.png)
+![Gh update README](/static/images/2023-08-11-snake-github/2023-08-11_update_README.webp)
 
 - Click on any of the generated images to obtain the link. The images are:
   - github-contribution-grid-snake-dark.svg
   - github-contribution-grid-snake.svg
 
-![Gh update README 2](/static/images/2023-08-11-snake-github/2023-08-11_update_README2.png)
+![Gh update README 2](/static/images/2023-08-11-snake-github/2023-08-11_update_README2.webp)
 
 - Click on the **Raw** button at the top right corner.
 
-![Gh update README 3](/static/images/2023-08-11-snake-github/2023-08-11_update_README3.png)
+![Gh update README 3](/static/images/2023-08-11-snake-github/2023-08-11_update_README3.webp)
 
 - Copy the URL of any image:
   - Should be something like: https://raw.githubusercontent.com/dev-404-not-found/dev-404-not-found/output/github-contribution-grid-snake-dark.svg
 
-![Gh update README 4](/static/images/2023-08-11-snake-github/2023-08-11_update_README4.png)
+![Gh update README 4](/static/images/2023-08-11-snake-github/2023-08-11_update_README4.webp)
 
 #### Update your README.md file
 
 - In the **main** branch of your repo edit the README.md file.
 
-![Gh update README 5](/static/images/2023-08-11-snake-github/2023-08-11_update_README5.png)
+![Gh update README 5](/static/images/2023-08-11-snake-github/2023-08-11_update_README5.webp)
 
 In order to make the image adaptable to normal or dark mode, you can add the images with media queries, as follow (updating the links with your corresponding username):
 
@@ -257,14 +257,14 @@ In order to make the image adaptable to normal or dark mode, you can add the ima
 
 - You can preview the changes, to verify that the image is displayed properly.
 
-![Gh update README 6](/static/images/2023-08-11-snake-github/2023-08-11_update_README6.png)
+![Gh update README 6](/static/images/2023-08-11-snake-github/2023-08-11_update_README6.webp)
 
 - Commit changes -> Commit directly to the main branch -> Commit changes
 
 <div className="flex justify-center">
   <div className="w-full max-w-screen-md overflow-hidden">
     <img
-      src="/static/images/2023-08-11-snake-github/2023-08-11_update_README7.png"
+      src="/static/images/2023-08-11-snake-github/2023-08-11_update_README7.webp"
       alt="Gh update README 7"
       className="mx-auto"
     />

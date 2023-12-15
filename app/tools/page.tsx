@@ -8,8 +8,8 @@ export const metadata = {
   description: 'Tools I Use - Cristian Encalada',
 };
 
-export default function Uses() {
-  const author = allAuthors.find((p) => p.slug === 'uses');
+export default function Tools() {
+  const author = allAuthors.find((p) => p.slug === 'tools');
 
   if (!author) {
     return null;

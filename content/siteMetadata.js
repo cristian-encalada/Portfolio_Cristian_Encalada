@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Cristian Encalada',
   author: 'Cristian Encalada',
   headerTitle: 'Cristian Encalada',
-  description: 'Full Stack Developer',
+  description: 'Software Developer',
   language: 'en-us',
   theme: 'dark', // system, dark or light
   siteUrl: 'https://cristian-encalada.vercel.app/',

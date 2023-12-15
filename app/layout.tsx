@@ -11,7 +11,7 @@ import ThemeProvider from '@/components/Providers/ThemeProvider';
 
 export const metadata = {
   title: 'Cristian Encalada',
-  description: 'Full Stack Developer',
+  description: 'Software Developer',
 };
 
 interface RootLayoutProps {
