@@ -49,7 +49,7 @@ const TOCInline = ({
         <li key={heading.value} className={`${heading.depth >= indentDepth && 'ml-6'}`}>
           <a
             href={heading.url}
-            className="not-prose border-b border-primary-400 no-underline dark:border-primary-500"
+            className="not-prose border-b border-primary-300 no-underline dark:border-primary-400"
           >
             {heading.value}
           </a>
