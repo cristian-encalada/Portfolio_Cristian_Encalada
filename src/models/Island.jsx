@@ -36,8 +36,6 @@ const  Island = (props) => {
         material={materials.PaletteMaterial001}
       />
       <mesh
-        
-        
         geometry={nodes.polySurface948_tree_body_0.geometry}
         material={materials.PaletteMaterial001}
       />
