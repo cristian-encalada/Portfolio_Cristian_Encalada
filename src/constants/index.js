@@ -26,6 +26,9 @@ import {
   alquivago,
   notesapp,
   web3d,
+  holberton,
+  incos,
+  umss,
 } from "../assets";
 
 export const navLinks = [
@@ -144,33 +147,44 @@ const experiences = [
   },
 ];
 
-const testimonials = [
+const courses = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    title: "Software Developer",
+    institution: "Holberton School | Uruguay",
+    icon: holberton,
+    iconBg: "#E6DEDD",
+    date: "Feb 2023 - Nov 2023",
+    points: [
+      "After my experience at Holberton, I can affirm that the most important advantage of an on-site bootcamp is the improvement of our soft-skills besides the technical side.",
+      "Technical Skills: Git, C, Python, JavaScript, Docker",
+      "Soft Skills: Teamwork, Collaboration, Time Management, Effective Communication, English",
+    ],
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    title: "IT Technician",
+    institution: "Instituto Alvarez Plata | Bolivia",
+    icon: incos,
+    iconBg: "#E6DEDD",
+    date: "Feb 2015 - Dic 2017",
+    points: [
+      "It was a 3 years course that helped me to understand the foundations of software development applied in different projects",
+      "Technical Skills: HTML, CSS, JavaScript, C#, CISCO Networking, SQL databases design and management",
+      "Soft Skills: Responsibility, Commitment, Time Management",
+    ],
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    title: "Electronics Engineer",
+    institution: "Universidad Mayor de San Simón | Bolivia",
+    icon: umss,
+    iconBg: "#E6DEDD",
+    date: "Feb 2011 - Dic 2016",
+    points: [
+      "After my experience doing a university career, I believe that the university gives you some tools to analyze and solve problems in a specific area, in my case, all the fundamentals of electric and electronic field",
+      "Technical Skills: Java, Electronic circuits, control and automation, analogic and digital signals, microprocessors, Networking, Operating Systems",
+      "Soft Skills: Responsibility, Commitment, Time Management",
+    ],
   },
 ];
-
 const projects = [
   {
     name: "Alquivago",
@@ -253,4 +267,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, courses, projects };

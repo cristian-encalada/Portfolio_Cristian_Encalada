@@ -27,6 +27,10 @@ import dev from "./company/dev.png";
 import softComputers from "./company/soft_computers.png";
 import jalasoft from "./company/jalasoft.png";
 
+import holberton from "./company/holberton.png";
+import incos from "./company/incos.png";
+import umss from "./company/umss.png";
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -67,4 +71,7 @@ export {
   alquivago,
   notesapp,
   web3d,
+  holberton,
+  incos,
+  umss,
 };
