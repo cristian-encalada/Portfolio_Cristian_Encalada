@@ -23,6 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  alquivago,
+  notesapp,
+  web3d,
 } from "../assets";
 
 export const navLinks = [
@@ -54,7 +57,7 @@ const services = [
     icon: data,
   },
   {
-    title: "3D Designer",
+    title: "3D Designer (Hobbyist)",
     icon: design,
   },
 ];
@@ -170,9 +173,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Alquivago",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web application that allows users to search and compare long-term rental properties from multiple sources in Montevideo - Uruguay, providing a convenient and efficient solution for housing searches.",
     tags: [
       {
         name: "react",
@@ -186,51 +189,67 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "flask",
+        color: "yellow-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: alquivago,
+    demo_link: 'https://alquivago.vercel.app/',
+    source_code_link: "https://github.com/cristian-encalada/Alquivago",
+    // https://alquivago-landing.vercel.app/
   },
   {
-    name: "Job IT",
+    name: "3D Web App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "3D application with fun interactive parts, such a floating island and a fox that moves when you type. It can be used as a landing page for a new game or product.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "vite",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "three.js",
+        color: "yellow-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: web3d,
+    demo_link: 'https://cristian-encalada-portfolio.vercel.app/',
+    source_code_link: "https://github.com/cristian-encalada/3D-react-app",
   },
   {
-    name: "Trip Guide",
+    name: "Notes App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A simple web application that allows users to take notes, tag, and filter them.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mysql",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "node.js",
+        color: "yellow-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: notesapp,
+    demo_link: 'https://notes-app-react-ce.vercel.app/',
+    source_code_link: "https://github.com/cristian-encalada/notes-web-app",
   },
 ];
 

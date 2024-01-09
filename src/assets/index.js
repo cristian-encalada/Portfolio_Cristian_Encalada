@@ -4,6 +4,7 @@ import data from "./data.png";
 import design from "./design.png";
 import frontend from "./frontend.png";
 import github from "./github.png";
+import demo from "./demo.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -29,6 +30,9 @@ import jalasoft from "./company/jalasoft.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import alquivago from "./alquivago.gif";
+import notesapp from "./notes_app.gif";
+import web3d from "./3D_web.gif";
 
 export {
   logo,
@@ -37,6 +41,7 @@ export {
   data,
   design,
   github,
+  demo,
   menu,
   close,
   css,
@@ -59,4 +64,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  alquivago,
+  notesapp,
+  web3d,
 };

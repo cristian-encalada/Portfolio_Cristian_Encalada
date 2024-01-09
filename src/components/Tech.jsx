@@ -12,7 +12,7 @@ const Tech = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          What I have expertise
+          What I use
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Technologies & Tools
