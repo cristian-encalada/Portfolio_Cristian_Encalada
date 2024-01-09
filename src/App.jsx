@@ -1,22 +1,28 @@
-import { Route, BrowserRouter as Router, Routes} from
-'react-router-dom';
-import { Home, About, Projects, Contact} from './pages'
-import Navbar from './components/Navbar';
+import { BrowserRouter } from "react-router-dom";
+
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 
 const App = () => {
   return (
-    <main className='bg-slate-300/20 h-[100vh]'>
-        <Router>
-            <Navbar/>
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/about" element={<About/>}/>
-                <Route path="/projects" element={<Projects/>}/>
-                <Route path="/contact" element={<Contact/>}/>
-            </Routes>
-        </Router>
-    </main>
-  )
+    <BrowserRouter>
+      <div className='relative z-0 bg-primary'>
+        <div className='h-screen w-screen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#23486F] via-[#192532] to-[#161a1d] bg-no-repeat bg-center'>
+        {/*<div className='bg-hero-pattern bg-no-repeat bg-center'></div> */}
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+        <Feedbacks />
+        <div className='relative z-0'>
+          <Contact />
+          <StarsCanvas />
+        </div>
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;
