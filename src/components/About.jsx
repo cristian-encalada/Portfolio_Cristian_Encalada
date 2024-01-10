@@ -45,11 +45,11 @@ const About = () => {
 
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary max-w-3xl text-[17px] leading-[30px]'
+        className='mt-4 text-secondary max-w text-[17px] leading-[30px]'
       >
 
       <p>
-      Moved from Bolivia to Uruguay with a background as an Electronics Engineer 
+      Moved from Bolivia 🇧🇴 to Uruguay 🇺🇾 with a background as an Electronics Engineer 
       and 2 years of experience as a QA Software Engineer 
       using Scrum as an agile methodology. 
       </p>
