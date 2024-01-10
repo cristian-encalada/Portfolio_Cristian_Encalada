@@ -6,6 +6,9 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { cv } from "../assets";
+import { cvpdf } from "../assets";
+
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -24,7 +27,7 @@ const ServiceCard = ({ index, title, icon }) => (
         <img
           src={icon}
           alt='web-development'
-          className='w-16 h-16 object-contain'
+          className='w-24 h-24 object-contain'
         />
 
         <h3 className='text-white text-[20px] font-bold text-center'>
@@ -47,16 +50,27 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary max-w text-[17px] leading-[30px]'
       >
-
-      <p>
-      Moved from Bolivia 🇧🇴 to Uruguay 🇺🇾 with a background as an Electronics Engineer 
-      and 2 years of experience as a QA Software Engineer 
-      using Scrum as an agile methodology. 
-      </p>
-      <p>
-      Capable of working independently or collaborating with a team demonstrating commitment,
-      responsibility and effective communication. Proficient in English (B2).
-      </p>
+  <div className='flex flex-col md:flex-row justify-between m-3 card-img_hover gap-10'>
+  <div>
+    <ul style={{ listStyleType: "circle" }}>
+      <li>Moved from 🇧🇴 Bolivia to 🇺🇾 Uruguay in 2023.</li>
+      <li>Background as an Electronics Engineer.</li>
+      <li>2 years of experience as a QA Software Engineer using Scrum.</li>
+      <li>Capable of working independently or collaborating with a team.</li>
+      <li>Proficient in English (B2).</li>
+    </ul>
+  </div>
+  <div
+    onClick={() => window.open(cvpdf, "_blank")}
+    className='m-3 w-24 h-24 flex justify-center items-center cursor-pointer mx-auto hover:scale-110 transition-transform'
+  >
+    <img
+      src={cv}
+      alt='cv'
+      className='w-full h-full object-contain'
+    />
+  </div>
+</div>
       </motion.div>
 
       <div className='mt-20 flex flex-wrap gap-10'>

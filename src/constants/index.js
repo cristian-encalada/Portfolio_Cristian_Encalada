@@ -2,6 +2,7 @@ import {
   frontend,
   backend,
   data,
+  devops,
   design,
   javascript,
   typescript,
@@ -56,8 +57,8 @@ const services = [
     icon: frontend,
   },
   {
-    title: "Data Engineer",
-    icon: data,
+    title: "DevOps",
+    icon: devops,
   },
   {
     title: "3D Designer (Hobbyist)",
@@ -118,8 +119,8 @@ const experiences = [
     points: [
       "Developing web applications using JavaScript, React and Node.js",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Collaborating with other developers to create high-quality and robust applications",
-      "Developing automated tests and writing software documentation",
+      "Collaborating with other developers to create high-quality and robust applications.",
+      "Developing automated tests and writing software documentation.",
     ],
   },
   {
@@ -155,7 +156,6 @@ const courses = [
     iconBg: "#E6DEDD",
     date: "Feb 2023 - Nov 2023",
     points: [
-      "After my experience at Holberton, I can affirm that the most important advantage of an on-site bootcamp is the improvement of our soft-skills besides the technical side.",
       "Technical Skills: Git, C, Python, JavaScript, Docker",
       "Soft Skills: Teamwork, Collaboration, Time Management, Effective Communication, English",
     ],
@@ -167,7 +167,6 @@ const courses = [
     iconBg: "#E6DEDD",
     date: "Feb 2015 - Dic 2017",
     points: [
-      "It was a 3 years course that helped me to understand the foundations of software development applied in different projects",
       "Technical Skills: HTML, CSS, JavaScript, C#, CISCO Networking, SQL databases design and management",
       "Soft Skills: Responsibility, Commitment, Time Management",
     ],
@@ -179,7 +178,6 @@ const courses = [
     iconBg: "#E6DEDD",
     date: "Feb 2011 - Dic 2016",
     points: [
-      "After my experience doing a university career, I believe that the university gives you some tools to analyze and solve problems in a specific area, in my case, all the fundamentals of electric and electronic field",
       "Technical Skills: Java, Electronic circuits, control and automation, analogic and digital signals, microprocessors, Networking, Operating Systems",
       "Soft Skills: Responsibility, Commitment, Time Management",
     ],

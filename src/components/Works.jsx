@@ -44,7 +44,7 @@ const ProjectCard = ({
         <div className='flex justify-center m-3 card-img_hover gap-10'>
             <div
               onClick={() => window.open(demo_link, "_blank")}
-              className='black-gradient w-20 h-20 rounded-full flex justify-center items-center cursor-pointer'
+              className='w-20 h-20 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform'
             >
               <img
                 src={demo}
@@ -54,7 +54,7 @@ const ProjectCard = ({
             </div>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-20 h-20 rounded-full flex justify-center items-center cursor-pointer'
+              className='w-20 h-20 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform'
             >
               <img
                 src={github}
@@ -62,7 +62,7 @@ const ProjectCard = ({
                 className='w-3/4 h-3/4 object-contain'
               />
             </div>
-          </div>
+        </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (

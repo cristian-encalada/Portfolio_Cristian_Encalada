@@ -1,12 +1,16 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import data from "./data.png";
+import devops from "./devops.png";
 import design from "./design.png";
 import frontend from "./frontend.png";
 import github from "./github.png";
 import demo from "./demo.png";
+import linkedin from "./linkedin.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import cv from "./cv.png";
+import cvpdf from "./CV_Cristian_Encalada_Full_Stack_Developer.pdf";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -74,4 +78,8 @@ export {
   holberton,
   incos,
   umss,
+  cv,
+  devops,
+  cvpdf,
+  linkedin
 };

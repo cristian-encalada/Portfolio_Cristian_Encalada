@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { github } from "../assets";
+import { linkedin } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -33,20 +35,41 @@ const Navbar = () => {
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
+      
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/'
-          className='flex items-center gap-2'
+          className='flex items-center gap-5'
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <img src={logo} alt='logo' className='w-9 h-9 object-contain hover:scale-110 transition-transform' />
+          <p className='text-white text-[18px] font-bold cursor-pointer flex hover:scale-105 transition-transform'>
             Software Developer &nbsp;
             <span className='sm:block hidden'> | Electronics Engineer</span>
           </p>
+            <div
+              onClick={() => window.open("https://www.linkedin.com/in/cristian-encalada-45099616a/", "_blank")}
+              className='w-20 h-20 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform'
+            >
+              <img
+                src={linkedin}
+                alt='linkedin'
+                className='w-2/4 h-2/4 object-contain'
+              />
+            </div>
+            <div
+              onClick={() => window.open("https://github.com/cristian-encalada", "_blank")}
+              className='w-20 h-20 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform'
+            >
+              <img
+                src={github}
+                alt='github'
+                className='w-2/4 h-2/4 object-contain'
+              />
+            </div>
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
