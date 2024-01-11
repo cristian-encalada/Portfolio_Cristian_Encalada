@@ -54,10 +54,12 @@ const About = () => {
   <div>
     <ul style={{ listStyleType: "circle" }}>
       <li>Moved from 🇧🇴 Bolivia to 🇺🇾 Uruguay in 2023.</li>
-      <li>Background as an Electronics Engineer.</li>
-      <li>2 years of experience as a QA Software Engineer using Scrum.</li>
-      <li>Capable of working independently or collaborating with a team.</li>
-      <li>Proficient in English (B2).</li>
+      <li>1+ year of experience building software projects. Comfortable with backend, frontend and devops.</li>
+      <li>2+ years of experience as a QA Software Engineer using Scrum as an agile methodology.</li>
+      <li>Solid knowledge in Python, Javascript, React, Node.js, Express, Linux and Docker technologies.</li>
+      <li>Capable of working independently demonstrating commitment and responsibility.</li>
+      <li>Capable of collaborating with a team demonstrating teamwork and effective communication.</li>
+      <li>Proficient in English(B2), technical writing and documentation.</li>
     </ul>
   </div>
   <div

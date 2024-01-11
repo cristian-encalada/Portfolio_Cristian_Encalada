@@ -117,10 +117,12 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Feb 2023 - Present",
     points: [
-      "Developing web applications using JavaScript, React and Node.js",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Collaborating with other developers to create high-quality and robust applications.",
-      "Developing automated tests and writing software documentation.",
+      "RESPONSIBILITIES",
+      "Developing web applications with technologies such as Python, JavaScript, React and Node.js.",
+      "Implementing unit tests using Jest (BDD/TDD patterns) and writing software documentation.",
+      "IMPACT AND ACHIEVEMENTS",
+      "Collaborated with other developers to create more complex and robust solutions (check Alquivago project).",
+      "Containerized with Docker and deployed with Vercel 3+ applications applying diverse technologies.",
     ],
   },
   {
@@ -130,9 +132,12 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Feb 2018 - Feb 2020",
     points: [
-      "Performing different testing techniques (functional, performance, regression, end-to-end, white/black box) and automated tests using tools like Git, Selenium, Jira, SQL.",
-      "Analyzing product requirements from the customer's perspective and verified the acceptance criteria from the technical side using Scrum.",
-      "Collaborating with different teams (Front-end, Back-end, DevOps, and Automation, ETL) and gained experience in CI/CD tools (Jenkins) and SDLC/ETL processes.",
+      "RESPONSIBILITIES",
+      "Analyze and perform different testing techniques (functional, performance, regression, end-to-end, white/black box) and automated tests using tools like Git, Selenium, Jira, and SQL.",
+      "IMPACT AND ACHIEVEMENTS",
+      "Career Progression from Trainee to Junior QA Tester within 3 months and eventually achieved an open-ended contract as a QA Software Engineer.",
+      "Collaborated with different teams (Front-end, Back-end, DevOps, and Automation, ETL) acquiring experience in CI/CD tools (Jenkins) and SDLC/ETL processes.",
+      "Created a technical manual for the testing team, detailing the steps to configure a virtualized local environment for ETL testing.",
     ],
   },
   {
@@ -142,8 +147,12 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Apr 2017 - Feb 2018",
     points: [
+      "RESPONSIBILITIES",
       "Providing technical support for hardware and software, including operating systems installation (Linux, Windows) and virtualization.",
-      "Linux SysAdmin, Networking and Infrastructure tasks (Identifying and fixing network issues)",
+      "Performing Linux SysAdmin, Networking and Infrastructure tasks (Identifying and fixing network issues)",
+      "IMPACT AND ACHIEVEMENTS",
+      "Suggested and implemented a Ticketing System to manage support requests.",
+
     ],
   },
 ];
@@ -156,8 +165,6 @@ const courses = [
     iconBg: "#E6DEDD",
     date: "Feb 2023 - Nov 2023",
     points: [
-      "Technical Skills: Git, C, Python, JavaScript, Docker",
-      "Soft Skills: Teamwork, Collaboration, Time Management, Effective Communication, English",
     ],
   },
   {
@@ -167,8 +174,6 @@ const courses = [
     iconBg: "#E6DEDD",
     date: "Feb 2015 - Dic 2017",
     points: [
-      "Technical Skills: HTML, CSS, JavaScript, C#, CISCO Networking, SQL databases design and management",
-      "Soft Skills: Responsibility, Commitment, Time Management",
     ],
   },
   {
@@ -178,8 +183,6 @@ const courses = [
     iconBg: "#E6DEDD",
     date: "Feb 2011 - Dic 2016",
     points: [
-      "Technical Skills: Java, Electronic circuits, control and automation, analogic and digital signals, microprocessors, Networking, Operating Systems",
-      "Soft Skills: Responsibility, Commitment, Time Management",
     ],
   },
 ];
@@ -187,7 +190,7 @@ const projects = [
   {
     name: "Alquivago",
     description:
-      "Web application that allows users to search and compare long-term rental properties from multiple sources in Montevideo - Uruguay, providing a convenient and efficient solution for housing searches.",
+      "Web application that allows users to search and compare long-term rental properties from multiple sources in Montevideo - Uruguay.",
     tags: [
       {
         name: "react",
@@ -240,7 +243,7 @@ const projects = [
   {
     name: "Notes App",
     description:
-      "A simple web application that allows users to take notes, tag, and filter them.",
+      "A simple web application that allows users to take notes, tag, and filter them. The application stores the notes in a remote database for data availability.",
     tags: [
       {
         name: "react",
