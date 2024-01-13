@@ -110,21 +110,21 @@ const technologies = [
 ];
 
 const experiences = [
-  {
-    title: "Full Stack Developer",
-    company_name: "Freelance | Uruguay",
-    icon: dev,
-    iconBg: "#E6DEDD",
-    date: "Feb 2023 - Present",
-    points: [
-      "RESPONSIBILITIES",
-      "Developing web applications with technologies such as Python, JavaScript, React and Node.js.",
-      "Implementing unit tests using Jest (BDD/TDD patterns) and writing software documentation.",
-      "IMPACT AND ACHIEVEMENTS",
-      "Collaborated with other developers to create more complex and robust solutions (check Alquivago project).",
-      "Containerized with Docker and deployed with Vercel 3+ applications applying diverse technologies.",
-    ],
-  },
+  // {
+  //   title: "Full Stack Developer",
+  //   company_name: "Freelance | Uruguay",
+  //   icon: dev,
+  //   iconBg: "#E6DEDD",
+  //   date: "Feb 2023 - Present",
+  //   points: [
+  //     "RESPONSIBILITIES",
+  //     "Developing web applications with technologies such as Python, JavaScript, React and Node.js.",
+  //     "Implementing unit tests using Jest (BDD/TDD patterns) and writing software documentation.",
+  //     "IMPACT AND ACHIEVEMENTS",
+  //     "Collaborated with other developers to create more complex and robust solutions (check Alquivago project).",
+  //     "Containerized with Docker and deployed with Vercel 3+ applications applying diverse technologies.",
+  //   ],
+  // },
   {
     title: "QA Software Engineer",
     company_name: "Jalasoft | Bolivia",
