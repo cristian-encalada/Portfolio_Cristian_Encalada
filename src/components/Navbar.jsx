@@ -45,31 +45,31 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain hover:scale-110 transition-transform' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex hover:scale-105 transition-transform'>
-            Software Developer &nbsp;
-            <span className='sm:block hidden'> | Electronics Engineer</span>
-          </p>
-            <div
+          <img src={logo} alt='logo' className='w-10 h-10 object-contain hover:scale-110 transition-transform' />
+          <div
               onClick={() => window.open("https://www.linkedin.com/in/cristian-encalada-45099616a/", "_blank")}
-              className='w-20 h-20 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform'
+              className='w-10 h-10 rounded-full flex flex-1 justify-end items-center cursor-pointer hover:scale-110 transition-transform'
             >
               <img
                 src={linkedin}
                 alt='linkedin'
-                className='w-2/4 h-2/4 object-contain'
+                className='w-full h-full object-contain'
               />
             </div>
             <div
               onClick={() => window.open("https://github.com/cristian-encalada", "_blank")}
-              className='w-20 h-20 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform'
+              className='w-10 h-10 rounded-full flex flex-1 justify-end items-center cursor-pointer hover:scale-110 transition-transform'
             >
               <img
                 src={github}
                 alt='github'
-                className='w-2/4 h-2/4 object-contain'
+                className='w-full h-full object-contain'
               />
             </div>
+          {/* <p className='text-white text-[18px] font-bold cursor-pointer flex hover:scale-105 transition-transform'>
+            Software Developer &nbsp;
+            <span className='sm:block hidden'> | Electronics Engineer</span>
+          </p> */}
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
