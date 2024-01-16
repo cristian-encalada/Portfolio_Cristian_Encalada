@@ -6,7 +6,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
-        <div className='h-screen w-screen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#23486F] via-[#192532] to-[#161a1d] bg-no-repeat bg-center'>
+        <div className='h-screen w-screen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#23486F] via-[#192532] to-[#1A191D] bg-no-repeat bg-center'>
         {/*<div className='bg-hero-pattern bg-no-repeat bg-center'></div> */}
           <Navbar />
           <Hero />
