@@ -83,12 +83,12 @@ const Projects = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>What I've built</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
+        <p className={`${styles.sectionSubText} text-center`}>What I've built</p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>
       </motion.div>
 
       <div className='w-full flex'>
-        <motion.p
+        {/* <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w leading-[30px]'
         >
@@ -96,7 +96,7 @@ const Projects = () => {
           links to code repositories and live demos in it. It reflects my
           ability to solve complex problems, work with different technologies,
           and manage projects effectively.
-        </motion.p>
+        </motion.p> */}
       </div>
 
       <div className='mt-20 flex flex-wrap gap-7'>
