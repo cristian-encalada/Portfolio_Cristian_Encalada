@@ -217,7 +217,7 @@ const projects = [
   {
     name: "3D Web App",
     description:
-      "3D application with fun interactive parts, such a floating island and a fox that moves when you type. It can be used as a landing page for a new game or product.",
+      "Interactive 3D web application with elements triggered for user navigation. Create as a tribute to the novella 'The Little Prince' by Antoine de Saint-Exupéry",
     tags: [
       {
         name: "react",
@@ -237,7 +237,7 @@ const projects = [
       },
     ],
     image: web3d,
-    demo_link: 'https://cristian-encalada-portfolio.vercel.app/',
+    demo_link: 'https://thelittleprince-tribute.vercel.app/',
     source_code_link: "https://github.com/cristian-encalada/3D-react-app",
   },
   {
