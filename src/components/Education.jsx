@@ -16,8 +16,9 @@ const EducationCard = ({ education }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#222831",
+        background: "#111111",
         color: "#fff",
+        boxShadow: '3px 3px 20px rgba(80, 78, 78, 0.6)',
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={education.date}

@@ -22,7 +22,7 @@ const Map = () => {
               <React.Fragment key={geo.rsmKey}>
                 <Geography
                   geography={geo}
-                  fill={isUruguay ? "red" : "white"}
+                  fill={isUruguay ? "#007AB4" : "white"}
                   stroke="black"
                   strokeWidth={0.5}
                 />
@@ -32,7 +32,7 @@ const Map = () => {
                     dx={-90}
                     dy={-30}
                     connectorProps={{
-                      stroke: "#FF5533",
+                      stroke: "#007AB4",
                       strokeWidth: 3,
                       strokeLinecap: "round"
                     }}
@@ -41,7 +41,7 @@ const Map = () => {
                       x="-8"
                       textAnchor="end"
                       alignmentBaseline="middle"
-                      fill="#F53"
+                      fill="#007AB4"
                     >
                       {"Uruguay"}
                     </text>

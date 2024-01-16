@@ -16,8 +16,9 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#222831",
+        background: "#111111",
         color: "#fff",
+        boxShadow: '3px 3px 20px rgba(80, 78, 78, 0.6)',
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
@@ -48,7 +49,7 @@ const ExperienceCard = ({ experience }) => {
             key={`experience-point-${index}`}
             className={`text-white-100 text-[14px] pl-1 tracking-wider ${
               point === "RESPONSIBILITIES" || point === "IMPACT AND ACHIEVEMENTS"
-                ? "list-none" // Add this class to remove list bullets
+                ? "list-none" // Remove list bullets
                 : ""
             }`}
           >
