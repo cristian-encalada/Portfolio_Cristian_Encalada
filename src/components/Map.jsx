@@ -43,7 +43,7 @@ const Map = () => {
                       alignmentBaseline="middle"
                       fill="#007AB4"
                     >
-                      {"Uruguay"}
+                      {"Living on Uruguay"}
                     </text>
                   </Annotation>
                 )}

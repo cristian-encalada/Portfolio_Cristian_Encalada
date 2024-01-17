@@ -8,7 +8,7 @@ import Works from "./Works";
 import Education from "./Education";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
-
+import FeaturedWorks from "./Works";
 
 export {
   Hero,
@@ -23,5 +23,6 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  FeaturedWorks
 };

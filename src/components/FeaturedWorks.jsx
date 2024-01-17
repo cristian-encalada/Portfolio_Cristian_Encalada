@@ -1,11 +1,10 @@
 import React from "react";
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { demo } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { featuredprojects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -18,24 +17,11 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
-        style={{ boxShadow: '3px 3px 20px rgba(80, 78, 78, 0.6)' }}
-      >
-        <div className='relative w-full h-[230px]'>
-          <img
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
-        </div>
-
+    <motion.div className='p-5 flex flex-col md:flex-row gap-5 items-center' 
+    variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+    style={{ boxShadow: '3px 3px 20px rgba(80, 78, 78, 0.6)' }}
+    >
+      <div className='w-full md:w-1/2'>
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
@@ -74,17 +60,28 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
+
+      <div className='w-full md:w-1/2'>
+        <div className='relative w-full h-[330px]'>
+          <img
+            src={image}
+            alt='project_image'
+            className='w-full h-full object-cover rounded-2xl'
+          />
+        </div>
+      </div>
+
     </motion.div>
   );
 };
 
-const Projects = () => {
+const FeaturedWorks = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>What I've built</p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>More projects</h2>
+        <p className={`${styles.sectionSubText} text-center`}>Projects I'm proud of</p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Featured projects</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -99,8 +96,8 @@ const Projects = () => {
         </motion.p> */}
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
+      <div className='mt-20 flex flex-col gap-5'>
+        {featuredprojects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
@@ -108,4 +105,4 @@ const Projects = () => {
   );
 };
 
-export default SectionWrapper(Projects, "projects");
+export default SectionWrapper(FeaturedWorks, "featuredprojects");
