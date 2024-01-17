@@ -240,87 +240,8 @@ const featuredprojects = [
     demo_link: 'https://thelittleprince-tribute.vercel.app/',
     source_code_link: "https://github.com/cristian-encalada/3D-react-app",
   },
-  {
-    name: "Notes App",
-    description:
-      "A simple web application that allows users to take notes, tag, and filter them. The application stores the notes in a remote database for data availability.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mysql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "node.js",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: notesapp,
-    demo_link: 'https://notes-app-react-ce.vercel.app/',
-    source_code_link: "https://github.com/cristian-encalada/notes-web-app",
-  },
 ];
 const projects = [
-  {
-    name: "Alquivago",
-    description:
-      "Web application that allows users to search and compare long-term rental properties from multiple sources in Montevideo - Uruguay.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "flask",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: alquivago,
-    demo_link: 'https://alquivago.vercel.app/',
-    source_code_link: "https://github.com/cristian-encalada/Alquivago",
-    // https://alquivago-landing.vercel.app/
-  },
-  {
-    name: "3D Web App",
-    description:
-      "Interactive 3D web application with elements triggered for user navigation. Create as a tribute to the novella 'The Little Prince' by Antoine de Saint-Exupéry",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "three.js",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: web3d,
-    demo_link: 'https://thelittleprince-tribute.vercel.app/',
-    source_code_link: "https://github.com/cristian-encalada/3D-react-app",
-  },
   {
     name: "Notes App",
     description:

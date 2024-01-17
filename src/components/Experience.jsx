@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -13,6 +13,12 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
+  const [detailsVisible, setDetailsVisible] = useState(false);
+
+  const toggleDetails = () => {
+    setDetailsVisible(!detailsVisible);
+  };
+
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -41,9 +47,26 @@ const ExperienceCard = ({ experience }) => {
         >
           {experience.company_name}
         </p>
+        <button
+        onClick={toggleDetails}
+        className={`text-blue-200 text-[12px] pl-1 tracking-wider ${
+          experience.points.some(
+            (point) =>
+              point === "RESPONSIBILITIES" || point === "IMPACT AND ACHIEVEMENTS"
+          )
+            ? "list-none" // Remove list bullets
+            : ""
+        }`}
+      >
+        {detailsVisible ? "Hide Details" : "View Details"}
+      </button>
       </div>
 
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul
+        className={`mt-5 list-disc ml-5 space-y-2 ${
+          detailsVisible ? "block" : "hidden"
+        }`}
+      >
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
@@ -57,6 +80,7 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
+
     </VerticalTimelineElement>
   );
 };
