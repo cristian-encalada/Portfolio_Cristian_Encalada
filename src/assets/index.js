@@ -36,11 +36,11 @@ import incos from "./company/incos.png";
 import umss from "./company/umss.png";
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import alquivago from "./alquivago.gif";
 import notesapp from "./notes_app.gif";
 import web3d from "./3D_web.gif";
+import blog from "./blog.png";
 
 export {
   logo,
@@ -70,7 +70,6 @@ export {
   softComputers,
   jalasoft,
   carrent,
-  jobit,
   tripguide,
   alquivago,
   notesapp,
@@ -81,5 +80,6 @@ export {
   cv,
   devops,
   cvpdf,
-  linkedin
+  linkedin,
+  blog
 };

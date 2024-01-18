@@ -21,7 +21,6 @@ import {
   jalasoft,
   dev,
   carrent,
-  jobit,
   tripguide,
   threejs,
   alquivago,
@@ -30,6 +29,7 @@ import {
   holberton,
   incos,
   umss,
+  blog,
 } from "../assets";
 
 export const navLinks = [
@@ -217,7 +217,7 @@ const featuredprojects = [
   {
     name: "3D Web App",
     description:
-      "Interactive 3D web application with elements triggered for user navigation. Create as a tribute to the novella 'The Little Prince' by Antoine de Saint-Exupéry",
+      "Interactive 3D web application with elements triggered through the user navigation. Created as a tribute to the novella 'The Little Prince' by Antoine de Saint-Exupéry",
     tags: [
       {
         name: "react",
@@ -245,7 +245,7 @@ const projects = [
   {
     name: "Notes App",
     description:
-      "A simple web application that allows users to take notes, tag, and filter them. The application stores the notes in a remote database for data availability.",
+      "A web app that allows users to take notes, tag, and filter them.",
     tags: [
       {
         name: "react",
@@ -267,6 +267,28 @@ const projects = [
     image: notesapp,
     demo_link: 'https://notes-app-react-ce.vercel.app/',
     source_code_link: "https://github.com/cristian-encalada/notes-web-app",
+  },
+  {
+    name: "Bilingual Blog (En/Es)",
+    description:
+      "Personal blog, where I share short articles acquired along my learning path.",
+    tags: [
+      {
+        name: "next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "i18next",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: blog,
+    demo_link: 'https://cristianencalada-blog.vercel.app/',
+    source_code_link: "https://github.com/cristian-encalada/docs",
   },
 ];
 
