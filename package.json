@@ -19,6 +19,7 @@
     "react-router-dom": "^6.8.1",
     "react-simple-maps": "^3.0.0",
     "react-tilt": "^1.0.2",
+    "react-type-animation": "^3.2.0",
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.149.0"
   },

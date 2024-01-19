@@ -56,7 +56,7 @@ export const FadingImage = (props) => {
 
     return (
         <mesh {...props} onPointerOver={(e) => setHover(true)} onPointerOut={(e) => setHover(false)}>
-            <planeGeometry args={[10, (10 * 127) / 241]} />
+            <planeGeometry args={[7, (7* 127) / 241]} />
             <imageFade ref={ref} tex={texture1} tex2={texture2} disp={dispTexture} toneMapped={false} />
         </mesh>
     )
