@@ -30,6 +30,7 @@ import {
   incos,
   umss,
   blog,
+  react_svg_buttons,
 } from "../assets";
 
 export const navLinks = [
@@ -188,6 +189,32 @@ const courses = [
 ];
 const featuredprojects = [
   {
+    name: "React SVG buttons v2",
+    description:
+      "I updated a deprecated node package that provides a  <MorphIcon /> component, able to morph between two icon types.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "flask",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: react_svg_buttons,
+    demo_link: 'http://plouc.github.io/react-svg-buttons/',
+    source_code_link: "https://github.com/cristian-encalada/react-svg-buttons-improved",
+  },
+  {
     name: "Alquivago",
     description:
       "Web application that allows users to search and compare long-term rental properties from multiple sources in Montevideo - Uruguay.",
@@ -214,34 +241,30 @@ const featuredprojects = [
     source_code_link: "https://github.com/cristian-encalada/Alquivago",
     // https://alquivago-landing.vercel.app/
   },
+];
+const projects = [
   {
-    name: "3D Web App",
+    name: "Bilingual Blog (En/Es)",
     description:
-      "Interactive 3D web application with elements triggered through the user navigation. Created as a tribute to the novella 'The Little Prince' by Antoine de Saint-Exupéry",
+      "Personal blog, where I share short articles acquired along my learning path.",
     tags: [
       {
-        name: "react",
+        name: "next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "vite",
+        name: "i18next",
         color: "green-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
-      {
-        name: "three.js",
-        color: "yellow-text-gradient",
-      },
     ],
-    image: web3d,
-    demo_link: 'https://thelittleprince-tribute.vercel.app/',
-    source_code_link: "https://github.com/cristian-encalada/3D-react-app",
+    image: blog,
+    demo_link: 'https://cristianencalada-blog.vercel.app/',
+    source_code_link: "https://github.com/cristian-encalada/docs",
   },
-];
-const projects = [
   {
     name: "Notes App",
     description:
@@ -269,26 +292,30 @@ const projects = [
     source_code_link: "https://github.com/cristian-encalada/notes-web-app",
   },
   {
-    name: "Bilingual Blog (En/Es)",
+    name: "3D Web App",
     description:
-      "Personal blog, where I share short articles acquired along my learning path.",
+      "Interactive 3D web app with elements triggered through the user navigation.",
     tags: [
       {
-        name: "next.js",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "i18next",
+        name: "vite",
         color: "green-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "three.js",
+        color: "yellow-text-gradient",
+      },
     ],
-    image: blog,
-    demo_link: 'https://cristianencalada-blog.vercel.app/',
-    source_code_link: "https://github.com/cristian-encalada/docs",
+    image: web3d,
+    demo_link: 'https://thelittleprince-tribute.vercel.app/',
+    source_code_link: "https://github.com/cristian-encalada/3D-react-app",
   },
 ];
 

@@ -41,6 +41,7 @@ import alquivago from "./alquivago.gif";
 import notesapp from "./notes_app.gif";
 import web3d from "./3D_web.gif";
 import blog from "./blog.png";
+import react_svg_buttons from "./react_svg_buttons.png";
 
 export {
   logo,
@@ -81,5 +82,6 @@ export {
   devops,
   cvpdf,
   linkedin,
-  blog
+  blog,
+  react_svg_buttons
 };
