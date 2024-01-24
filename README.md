@@ -1,49 +1,20 @@
-# Personal Porftfolio
+# 🚀 My own portfolio
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d7aff8f9-2791-4ea4-882d-69f2bfcde0f2/deploy-status)](https://app.netlify.com/sites/luanpanno-portfolio/deploys)
 
-Project built with Vite, React, JavasScript, Tailwindcss, Three.js, React-three-fiber.
+## 👋 About
 
-## Main page
+Portfolio created with Next.js, stylized by using styled-components and internationalization with next-i18next. Available in Portuguese and English.
 
-![Main page Screenshot](./public/img/main_page.png)
-  
-## Demo
+<hr />
 
-[![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-blue)](https://cristian-encalada.vercel.app/)
+## 🔧 How to start the project
 
-## Run Project 
+First of all, you need Yarn to run this project. [Click here](https://classic.yarnpkg.com/en/docs/install#debian-stable) to see how to install Yarn
 
-1. Install dependencies:
-```bash 
-  npm install
-```
+1.  Install the project dependencies by running the following command:
 
+        yarn
 
-2. Run this project
+2.  Start the project by the following command:
 
-```bash 
-  npm run dev
-```
-    
-## Contributing
-
-Contributions are always welcome!
-
-Fork this repo, make changes, test, create a pull request.
-
-Please make sure to maintain `authorship`.
-
-  
-## Credits
-
-- [@adrianhajdin](https://github.com/adrianhajdin/project_3D_developer_portfolio) - Main design idea
-- [@nabendu82](https://github.com/nabendu82/image-transition-r3f) - Image transition react-three-fiber
-- [@zcreativelabs](https://github.com/zcreativelabs/react-simple-maps) - React SVG map
-- [@max37](https://www.npmjs.com/package/react-type-animation) - React type animation
-
-## License
-
-[MIT](./LICENSE)
-
-[![MIT License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
-
-  
+        yarn dev

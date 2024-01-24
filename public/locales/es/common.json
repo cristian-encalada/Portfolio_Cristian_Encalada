@@ -1,0 +1,28 @@
+{
+  "websiteTitle": "Cristian Encalada | Desarrollador Full-Stack | Portafolio",
+  "websiteDescription": "Portafolio de Cristian Encalada, mostrando su trabajo y experiencia como desarrollador.",
+  "navHome": "Inicio",
+  "navProjects": "Proyectos",
+  "navContact": "Contacto",
+  "homeHello": "Hola, soy",
+  "homeJob": "Desarrollador Full-Stack",
+  "homeLocation": "Montevideo, Uruguay",
+  "homeDescription": "Me trasladé de Bolivia a Uruguay en 2023, Soy Ingeniero Electrónico con más de 2 años de experiencia trabajando como Ingeniero de Control de Calidad de Software en Jalasoft, una empresa con sede en Bolivia.",
+  "titleProjects": "Proyectos",
+  "titleContact": "Contacto",
+  "contactFormP": "¡Siéntete libre de enviarme un correo electrónico!",
+  "contactFormNamePlaceholder": "Inserta tu nombre",
+  "contactFormEmailPlaceholder": "Inserta tu correo electrónico",
+  "contactFormMessagePlaceholder": "Inserta tu mensaje",
+  "contactFormSubmit": "Enviar",
+  "contactFormSuccess": "¡Correo electrónico enviado con éxito! Pronto estaré en contacto contigo. :)",
+  "contactFormError": "¡Oops! Algo salió mal. Por favor, inténtalo nuevamente más tarde.",
+  "React": "React",
+  "Next.js": "Next.js",
+  "HTML and CSS": "HTML y CSS",
+  "HTML, CSS and Bootstrap": "HTML, CSS y Bootstrap",
+  "Node.js, React and React Native": "Node.js, React y React Native",
+  "React with TypeScript": "React con TypeScript",
+  "Node.js, Socket.io, MongoDB, React and Quill": "Node.js, Socket.io, MongoDB, React y Quill"
+  }
+  
