@@ -8,6 +8,7 @@ type Props = HTMLAttributes<HTMLInputElement | HTMLTextAreaElement> & {
   id?: string;
   errorMessage?: string;
   value?: string;
+  placeholder?: string;
 };
 
 const Input: React.FC<Props> = ({
@@ -16,6 +17,7 @@ const Input: React.FC<Props> = ({
   id,
   errorMessage,
   onBlur,
+  placeholder,
   ...props
 }) => {
   const [hasFocus, setHasFocus] = useState(false);
