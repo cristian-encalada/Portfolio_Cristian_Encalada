@@ -1,29 +1,21 @@
 /* eslint-disable max-len */
-import { CodeBlock, github } from 'react-code-blocks';
+import Image from 'next/image';
+
+import CodePic from '@assets/imgs/success.png';
 
 import { Container } from './styles';
 
 const ProfilePicture = () => (
   <Container>
-    <div className="border">
-      <div className="wrapper">
-        <CodeBlock
-          text={`"About me": {
-        "Name": "Cristian Encalada",
-        "From": "Bolivia",
-        "Living in": "Montevideo - Uruguay",
-      },
-      "IT Experience": {
-        "QA Software Engineer": ["Jalasoft", "Bolivia"],
-        "IT Support": ["Soft Computers", "Bolivia"]
-      }`}
-          language="json"
-          theme={github}
-          codeContainerStyle={{ whiteSpace: 'pre' }}
-        />
-      </div>
+    <div className="wrapper">
+      <Image
+        src={CodePic}
+        alt="success code"
+        height="400"
+        width="400"
+        priority
+      />
     </div>
-    <div></div>
   </Container>
 );
 

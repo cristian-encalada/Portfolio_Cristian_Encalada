@@ -46,7 +46,7 @@ Fork this repo, make changes, test, create a pull request.
   
 ## Credits
 
-- [@luanpanno](https://github.com/luanpanno/portfolio) - Origianl idea
+- [@luanpanno](https://github.com/luanpanno/portfolio) - Original idea
 
 ## License
 
