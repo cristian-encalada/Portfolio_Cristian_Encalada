@@ -17,7 +17,6 @@ const Input: React.FC<Props> = ({
   id,
   errorMessage,
   onBlur,
-  placeholder,
   ...props
 }) => {
   const [hasFocus, setHasFocus] = useState(false);

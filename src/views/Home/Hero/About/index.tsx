@@ -1,16 +1,10 @@
 import { useTranslation } from 'next-i18next';
 import { AiFillGithub, AiFillLinkedin, AiFillFileText } from 'react-icons/ai';
 import { RiMapPin2Line, RiMailLine } from 'react-icons/ri';
+import { TypeAnimation } from 'react-type-animation';
 
 import LinkItem from './LinkItem';
-import {
-  Container,
-  Name,
-  Position,
-  BasicInfo,
-  AboutMe,
-  LinksList,
-} from './styles';
+import { Container, Name, BasicInfo, AboutMe, LinksList } from './styles';
 
 const About = () => {
   const { t } = useTranslation('common');
@@ -19,7 +13,19 @@ const About = () => {
     <Container>
       <Name>Cristian Encalada</Name>
 
-      <Position>{t('homeJob')}</Position>
+      <TypeAnimation
+        sequence={[
+          // Same substring at the start will only be typed out once, initially
+          'Full stack developer',
+          1000, // wait 1s before replacing "Mice" with "Hamsters"
+          'Electronics Engineer',
+          1000,
+        ]}
+        wrapper="span"
+        speed={40}
+        style={{ fontSize: '1.5em', display: 'inline-block' }}
+        repeat={Infinity}
+      />
 
       <BasicInfo>
         <li>
@@ -32,7 +38,8 @@ const About = () => {
         </li>
       </BasicInfo>
 
-      <AboutMe>{t('homeDescription')}</AboutMe>
+      <AboutMe>{t('homeDescription1')}</AboutMe>
+      <AboutMe>{t('homeDescription2')}</AboutMe>
 
       <LinksList>
         <LinkItem

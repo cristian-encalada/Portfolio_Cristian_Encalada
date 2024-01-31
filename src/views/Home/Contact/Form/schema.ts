@@ -1,23 +1,23 @@
 import * as yup from 'yup';
 
 const makeSchema = (language: string) => {
-  const checkLanguage = (pt: string, en: string) =>
-    language.includes('pt') ? pt : en;
+  const checkLanguage = (es: string, en: string) =>
+    language.includes('es') ? es : en;
 
   const nameRequired = checkLanguage(
-    'Nome é um campo obrigatório',
+    'Nombre es un campo obligatorio',
     'Name is a required field'
   );
   const emailFormat = checkLanguage(
-    'Email precisa ter um formato válido',
+    'Email debe tener un formato válido',
     'Email needs to be valid'
   );
   const emailRequired = checkLanguage(
-    'Email é um campo obrigatório',
+    'Email es un campo obligatorio',
     'Email is a required field'
   );
   const messageRequired = checkLanguage(
-    'Mensagem é um campo obrigatório',
+    'Mensaje es un campo obligatorio',
     'Message is a required field'
   );
 
