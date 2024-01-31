@@ -20,7 +20,8 @@ const Card: React.FC<Props> = ({ project }) => {
       </div>
       <div className="text">
         <h3>{project.name}</h3>
-        <span>{t(project.stack)}</span>
+        <p>{t(project.stack)}</p>
+        <span>{t(project.description)}</span>
       </div>
     </Container>
   );

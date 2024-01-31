@@ -42,8 +42,8 @@ export const Container = styled.a`
     }
 
     span {
-      color: #aaa;
-      font-size: 1rem;
+      color: #333;
+      font-size: 1em;
     }
   }
 `;

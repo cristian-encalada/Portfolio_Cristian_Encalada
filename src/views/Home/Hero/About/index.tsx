@@ -38,8 +38,7 @@ const About = () => {
         </li>
       </BasicInfo>
 
-      <AboutMe>{t('homeDescription1')}</AboutMe>
-      <AboutMe>{t('homeDescription2')}</AboutMe>
+      <AboutMe>{t('homeDescription')}</AboutMe>
 
       <LinksList>
         <LinkItem

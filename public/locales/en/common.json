@@ -7,8 +7,7 @@
   "homeHello": "Hello, I'm",
   "homeJob": "Full-Stack Developer",
   "homeLocation": "Montevideo, Uruguay",
-  "homeDescription1": "Relocated from Bolivia to Uruguay with a strong determination to contribute as a Full Stack Developer. I have 2+ years of experience as a QA Software Engineer collaborating closely with the development team.",
-  "homeDescription2": "With a background as an Electronics Engineer, complemented by building several real-world projects involving technologies such as Python, Javascript, React, Node.js and Docker, I'm excited about transitioning into a full-time career in software development.",
+  "homeDescription": "Relocated from Bolivia to Uruguay. I have 2+ years of experience as a QA Software Engineer. With a background as an Electronics Engineer, complemented by building several real-world projects involving technologies such as Python, Javascript, React and Node.js, I'm transitioning into a full-time career in software development.",
   "titleProjects": "Projects",
   "titleContact": "Contact",
   "contactFormP": "Feel free to send me an email!",
@@ -18,11 +17,10 @@
   "contactFormSubmit": "Submit",
   "contactFormSuccess": "Email sent successfully! Soon I'll be in touch with you. :)",
   "contactFormError": "Oops! Something went wrong. Please, try again later.",
-  "React": "React",
-  "Next.js": "Next.js",
-  "HTML and CSS": "HTML and CSS",
-  "HTML, CSS and Bootstrap": "HTML, CSS and Bootstrap",
-  "Node.js, React and React Native": "Node.js, React and React Native",
-  "React with TypeScript": "React with TypeScript",
-  "Node.js, Socket.io, MongoDB, React and Quill": "Node.js, Socket.io, MongoDB, React and Quill"
+  "projectDescription1": "Personal blog where I share articles about the knowledge acquired along my learning journey.",
+  "projectDescription2": "Web application that allows users to search and compare long-term rental properties from multiple sources in Montevideo - Uruguay.",
+  "projectDescription3": "An interactive 3D page, built as a tribute to “The Little Prince”, novella by Antoine de Saint-Exupéry.",
+  "projectDescription4": "Technical Interview Challenge. A web app that allows users to take notes, tag by categories, and filter them.",
+  "projectDescription5": "Update of a outdated npm package that provides a  <MorphIcon/> component, able to change shapes between two icon types.",
+  "projectDescription6": "Update of a outdated npm package that provides a <HoverButtonDiagonal> component, based on React Hooks"
 }

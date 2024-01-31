@@ -7,8 +7,7 @@
   "homeHello": "Hola, soy",
   "homeJob": "Desarrollador Full-Stack",
   "homeLocation": "Montevideo, Uruguay",
-  "homeDescription1": "Me trasladé de Bolivia a Uruguay con una fuerte determinación de contribuir como Desarrollador Full Stack. Tengo más de 2 años de experiencia como Ingeniero de Software QA, colaborando estrechamente con el equipo de desarrollo.",
-  "homeDescription2": "Con una formación como Ingeniero Electrónico, complementada con la creación de varios proyectos del mundo real que involucran tecnologías como Python, Javascript, React, Node.js y Docker, estoy emocionado por la transición a una carrera a tiempo completo en desarrollo de software.",
+  "homeDescription": "Me trasladé de Bolivia a Uruguay. Tengo más de 2 años de experiencia como ingeniero de software de control de calidad. Con experiencia como ingeniero electrónico, complementada con la creación de varios proyectos del mundo real que involucran tecnologías como Python, Javascript, React y Node.js, estoy haciendo la transición a una carrera de tiempo completo en desarrollo de software.",
   "titleProjects": "Proyectos",
   "titleContact": "Contacto",
   "contactFormP": "¡Siéntete libre de enviarme un correo electrónico!",
@@ -18,12 +17,11 @@
   "contactFormSubmit": "Enviar",
   "contactFormSuccess": "¡Correo electrónico enviado con éxito! Pronto estaré en contacto contigo. :)",
   "contactFormError": "¡Oops! Algo salió mal. Por favor, inténtalo nuevamente más tarde.",
-  "React": "React",
-  "Next.js": "Next.js",
-  "HTML and CSS": "HTML y CSS",
-  "HTML, CSS and Bootstrap": "HTML, CSS y Bootstrap",
-  "Node.js, React and React Native": "Node.js, React y React Native",
-  "React with TypeScript": "React con TypeScript",
-  "Node.js, Socket.io, MongoDB, React and Quill": "Node.js, Socket.io, MongoDB, React y Quill"
+  "projectDescription1": "Blog personal donde comparto artículos sobre los conocimientos adquiridos a lo largo de mi trayectoria de aprendizaje.",
+  "projectDescription2": "Aplicación web que permite a los usuarios buscar y comparar propiedades en alquiler a largo plazo de múltiples fuentes en Montevideo, Uruguay.",
+  "projectDescription3": "Página interactiva en 3D, construida como un homenaje a 'El Principito', la novela de Antoine de Saint-Exupéry.",
+  "projectDescription4": "Desafío de entrevista técnica. Una aplicación web que permite a los usuarios tomar notas, etiquetarlas por categorías y filtrarlas.",
+  "projectDescription5": "Actualización de un paquete npm desactualizado que proporciona un componente <MorphIcon/>, capaz de cambiar formas entre dos tipos de iconos.",
+  "projectDescription6": "Actualización de un paquete npm desactualizado que proporciona un componente <HoverButtonDiagonal>, basado en React Hooks."
   }
   

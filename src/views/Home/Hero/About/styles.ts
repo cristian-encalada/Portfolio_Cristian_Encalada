@@ -62,7 +62,7 @@ export const BasicInfo = styled.ul`
 export const AboutMe = styled.p`
   letter-spacing: 0.4px;
   line-height: 22px;
-  color: #888;
+  color: #333;
   max-width: 500px;
 `;
 
@@ -71,11 +71,15 @@ export const LinksList = styled.ul`
   align-items: center;
   justify-content: space-between;
   max-width: 350px;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   margin: 8px 0;
 
   @media screen and (max-width: 1000px) {
     max-width: 100%;
     width: 100%;
+  }
+
+  li:hover {
+    transform: scale(1.1);
   }
 `;
